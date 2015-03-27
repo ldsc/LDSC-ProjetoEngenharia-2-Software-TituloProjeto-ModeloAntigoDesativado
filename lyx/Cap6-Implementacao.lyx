@@ -135,6 +135,71 @@ Neste capítulo do projeto de engenharia apresentamos os códigos fonte que
  foram desenvolvidos.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Abaixo configuração para as listagens
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=[ISO]C++,numbers=left, numberstyle=
+\backslash
+tiny, stepnumber=1, numbersep=1pt, firstnumber=last , emph={alignas , alignof
+ , and , and_eq, asm , auto, bitand, bitor, bool, break, case, catch, char,
+ char16_t, char32_t, class, compl, const, constexpr, const_cast, continue,
+ decltype , default, delete, do, double, dynamic_cast, else, enum, explicit,
+ export, extern, false, float, for, friend, goto, if, inline ,int ,long
+ ,mutable ,namespace ,new ,noexcept , not not_eq nullptr , operator ,or
+ ,or_eq, private ,protected ,public ,register ,reinterpret_cast ,return
+ ,short ,signed ,sizeof ,static ,static_assert, static_cast, struct ,switch
+ ,template ,this ,thread_local , throw ,true ,try ,typedef ,typeid ,typename
+ ,union ,unsigned ,using, virtual ,void ,volatile ,wchar_t, while ,xor ,xor_eqv,
+ override, final} , 
+\end_layout
+
+\begin_layout Plain Layout
+
+emphstyle={
+\backslash
+color{red}}, 
+\end_layout
+
+\begin_layout Plain Layout
+
+emph={[2]array , dynarray ,vector , deque, list, forward_list, set, map,
+ multiset, multimap, unordered_set, unordered_map, unordered_multiset,unordered_
+multimap, stack, queue, priority_queue, pair, tuple, string, wstring, u16string,
+u32string, valarray,piecewise_construct_t , piecewise_construct , integer_sequen
+ce, swap, exchange , forward, move , move_if_noexcept, declval, hash, optional,
+ in_place_t, in_place, nullopt_t , nullopt , bad_optional_access  } , 
+\end_layout
+
+\begin_layout Plain Layout
+
+emphstyle={[2]
+\backslash
+color{blue}}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Código fonte
 \begin_inset CommandInset label
@@ -149,6 +214,28 @@ status collapsed
 
 \begin_layout Plain Layout
 Implementação
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Nota importante: as listagens, arquivos .h .cpp, devem ser salvas usando formato
+ ISO 8859-1, que é um formato internacional para línguas latinas (o que
+ inclui o portugues).
+ Se os arquivos forem salvos no formato UTF-8 alguns caracteres de acentuação
+ irão aparecer errados.
+\end_layout
+
+\begin_layout Plain Layout
+Se o arquivo já existe, você pode mudar a codificação no Kate/Gedit indo
+ em SALVAR-COMO, e selecionando o formato ISO 8859-1.
 \end_layout
 
 \end_inset

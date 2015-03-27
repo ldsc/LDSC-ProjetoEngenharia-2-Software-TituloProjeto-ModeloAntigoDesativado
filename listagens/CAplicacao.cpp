@@ -1,11 +1,10 @@
-/**  Este programa exemplifica a estrutura/layout de um programa t√≠pico em C++  */
+/**  Este programa exemplifica a estrutura/layout de um programa tÌpico em C++  */
 #include <iostream>
 
-/// Inclui a declara√ß√£o da classe
+// Inclui a declaraÁ„o da classe
 #include "CAplicacao.h" 
 
-/// Implementa os m√©todos da classe
-/// O m√©todo Run() escreve uma mensagem na tela
+// Implementa os mÈtodos da classe
 void CAplicacao::Run()
 {
   // std::cout escreve na tela  o texto "Bem-vindo ao C++!"

@@ -1,11 +1,11 @@
 // Este programa exemplifica a estrutura/layout de um 
-//    programa tÃ­pico em C++  
+//    programa típico em C++  
 
 /** Declara uma classe minimalista, a classe CAplicacao
-A mesma inclui apenas um mÃ©todo, o mÃ©todo Run(). **/
+A mesma inclui apenas um método, o método Run(). **/
 class CAplicacao
 {
  public:
-  /// MÃ©todo de execuÃ§Ã£o da aplicaÃ§Ã£o.
+  /// Método de execução da aplicação, escreve mensagem na tela.
   void Run ();
 };
