@@ -135,12 +135,227 @@ Neste capítulo do projeto de engenharia apresentamos os códigos fonte que
  foram desenvolvidos.
 \end_layout
 
+\begin_layout Description
+Nota: os códigos devem ser documentados usando padrão 
+\series bold
+javadoc
+\series default
+.
+ Posteriormente usar o programa 
+\series bold
+doxygen 
+\series default
+para gerar a documentação no formato html.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Veja informações gerais aqui 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.doxygen.org/"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Veja exemplo aqui 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Nota: ao longo deste capítulo usamos inclusão direta de arquivos externos
+ usando o pacote 
+\emph on
+listings
+\emph default
+ do LaTeX.
+ Maiores detalhes de como a saída pode ser gerada estão disponíveis nos
+ links abaixo.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "http://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "http://mirrors.ctan.org/macros/latex/contrib/listings/listings.pdf"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Abaixo configuração para as listagens
+Abaixo configuração para as listagens; detalhes no pacote listings;
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+lstset{ %
+\end_layout
+
+\begin_layout Plain Layout
+backgroundcolor=
+\backslash
+color{white}, % choose the background color; you must add 
+\backslash
+usepackage{color} or 
+\backslash
+usepackage{xcolor}
+\end_layout
+
+\begin_layout Plain Layout
+basicstyle=
+\backslash
+footnotesize, % the size of the fonts that are used for the code
+\end_layout
+
+\begin_layout Plain Layout
+breakatwhitespace=false, % sets if automatic breaks should only happen at
+ whitespace
+\end_layout
+
+\begin_layout Plain Layout
+breaklines=true, % sets automatic line breaking
+\end_layout
+
+\begin_layout Plain Layout
+captionpos=b, % sets the caption-position to bottom
+\end_layout
+
+\begin_layout Plain Layout
+commentstyle=
+\backslash
+color{mygreen}, % comment style
+\end_layout
+
+\begin_layout Plain Layout
+deletekeywords={...}, % if you want to delete keywords from the given language
+\end_layout
+
+\begin_layout Plain Layout
+escapeinside={
+\backslash
+%*}{*)}, % if you want to add LaTeX within your code
+\end_layout
+
+\begin_layout Plain Layout
+extendedchars=true, % lets you use non-ASCII characters; for 8-bits encodings
+ only, does not work with UTF-8
+\end_layout
+
+\begin_layout Plain Layout
+frame=single, % adds a frame around the code
+\end_layout
+
+\begin_layout Plain Layout
+keepspaces=true, % keeps spaces in text, useful for keeping indentation
+ of code (possibly needs columns=flexible)
+\end_layout
+
+\begin_layout Plain Layout
+keywordstyle=
+\backslash
+color{blue}, % keyword style
+\end_layout
+
+\begin_layout Plain Layout
+language=Octave, % the language of the code
+\end_layout
+
+\begin_layout Plain Layout
+otherkeywords={*,...}, % if you want to add more keywords to the set
+\end_layout
+
+\begin_layout Plain Layout
+numbers=left, % where to put the line-numbers; possible values are (none,
+ left, right)
+\end_layout
+
+\begin_layout Plain Layout
+numbersep=5pt, % how far the line-numbers are from the code
+\end_layout
+
+\begin_layout Plain Layout
+numberstyle=
+\backslash
+tiny
+\backslash
+color{mygray}, % the style that is used for the line-numbers
+\end_layout
+
+\begin_layout Plain Layout
+rulecolor=
+\backslash
+color{black}, % if not set, the frame-color may be changed on line-breaks
+ within not-black text (e.g.
+ comments (green here))
+\end_layout
+
+\begin_layout Plain Layout
+showspaces=false, % show spaces everywhere adding particular underscores;
+ it overrides 'showstringspaces'
+\end_layout
+
+\begin_layout Plain Layout
+showstringspaces=false, % underline spaces within strings only
+\end_layout
+
+\begin_layout Plain Layout
+showtabs=false, % show tabs within strings adding particular underscores
+\end_layout
+
+\begin_layout Plain Layout
+stepnumber=2, % the step between two line-numbers.
+ If it's 1, each line will be numbered
+\end_layout
+
+\begin_layout Plain Layout
+stringstyle=
+\backslash
+color{mymauve}, % string literal style
+\end_layout
+
+\begin_layout Plain Layout
+tabsize=2, % sets default tabsize to 2 spaces
+\end_layout
+
+\begin_layout Plain Layout
+title=
+\backslash
+lstname % show the filename of files included with 
+\backslash
+lstinputlisting; also try caption instead of title
+\end_layout
+
+\begin_layout Plain Layout
+}
 \end_layout
 
 \end_inset
@@ -158,17 +373,21 @@ status open
 \backslash
 lstset{language=[ISO]C++,numbers=left, numberstyle=
 \backslash
-tiny, stepnumber=1, numbersep=1pt, firstnumber=last , emph={alignas , alignof
- , and , and_eq, asm , auto, bitand, bitor, bool, break, case, catch, char,
- char16_t, char32_t, class, compl, const, constexpr, const_cast, continue,
- decltype , default, delete, do, double, dynamic_cast, else, enum, explicit,
- export, extern, false, float, for, friend, goto, if, inline ,int ,long
- ,mutable ,namespace ,new ,noexcept , not not_eq nullptr , operator ,or
- ,or_eq, private ,protected ,public ,register ,reinterpret_cast ,return
- ,short ,signed ,sizeof ,static ,static_assert, static_cast, struct ,switch
- ,template ,this ,thread_local , throw ,true ,try ,typedef ,typeid ,typename
- ,union ,unsigned ,using, virtual ,void ,volatile ,wchar_t, while ,xor ,xor_eqv,
- override, final} , 
+tiny,  stepnumber=1, numbersep=1pt, firstnumber=last , 
+\end_layout
+
+\begin_layout Plain Layout
+
+emph={alignas , alignof , and , and_eq, asm , auto, bitand, bitor, bool,
+ break, case, catch, char, char16_t, char32_t, class, compl, const, constexpr,
+ const_cast, continue, decltype , default, delete, do, double, dynamic_cast,
+ else, enum, explicit, export, extern, false, float, for, friend, goto,
+ if, inline ,int ,long ,mutable ,namespace ,new ,noexcept , not not_eq nullptr
+ , operator ,or ,or_eq, private ,protected ,public ,register ,reinterpret_cast
+ ,return ,short ,signed ,sizeof ,static ,static_assert, static_cast, struct
+ ,switch ,template ,this ,thread_local , throw ,true ,try ,typedef ,typeid
+ ,typename ,union ,unsigned ,using, virtual ,void ,volatile ,wchar_t, while
+ ,xor ,xor_eqv, override, final} , 
 \end_layout
 
 \begin_layout Plain Layout
@@ -245,7 +464,11 @@ Se o arquivo já existe, você pode mudar a codificação no Kate/Gedit indo
 
 \begin_layout Standard
 Apresenta-se a seguir um conjunto de classes (arquivos .h e .cpp) além do
- programa main.
+ programa 
+\family typewriter
+main
+\family default
+.
 \end_layout
 
 \begin_layout Standard
@@ -257,7 +480,20 @@ status open
 
 
 \backslash
-ref{helo-h}
+ref{CAplicacao-h}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+note que dentro de 
+\backslash
+ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
+ abaixo label={CAplicacao-h}
 \end_layout
 
 \end_inset
@@ -279,8 +515,8 @@ status open
 \backslash
 lstset{language=C++} 
 \backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CAplicacao.}, label={hel
-o-h},extendedchars=true,breaklines=true,basicstyle=
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CAplicacao.}, label={CAp
+licacao-h},extendedchars=true,breaklines=true,basicstyle=
 \backslash
 footnotesize
 \backslash
@@ -301,7 +537,7 @@ status open
 
 
 \backslash
-ref{helo-cpp}
+ref{CAplicacao-cpp}
 \end_layout
 
 \end_inset
@@ -325,7 +561,7 @@ status open
 lstset{language=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CAplicacao.},
- label={helo-cpp},extendedchars=true,breaklines=true,basicstyle=
+ label={CAplicacao-cpp},extendedchars=true,breaklines=true,basicstyle=
 \backslash
 footnotesize
 \backslash
@@ -342,7 +578,7 @@ status open
 
 
 \backslash
-ref{List-5-3-programa.cpp}
+ref{programa-cpp}
 \end_layout
 
 \end_inset
@@ -372,12 +608,26 @@ lstinputlisting[ caption={
 
 Arquivo de implementação da função 
 \backslash
-texttt{main()}.}, label={List-5-3-programa.cpp},extendedchars=true,breaklines=true
-,basicstyle=
+texttt{main()}.}, label={programa-cpp},extendedchars=true,breaklines=true,basicst
+yle=
 \backslash
 footnotesize
 \backslash
 tt] {../listagens/Programa.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+note que para saída mudamos a cor de fundo para azul; geramos a saída e
+ depois redefinimos para "sem cor de fundo".
 \end_layout
 
 \end_inset
@@ -402,6 +652,11 @@ lstinputlisting[caption=,extendedchars=true,breaklines=true,basicstyle=
 footnotesize
 \backslash
 tt] {../listagens/Programa.out}   
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 lstset{backgroundcolor=} 
 \end_layout
@@ -409,31 +664,6 @@ lstset{backgroundcolor=}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Description
-Nota: os códigos devem ser documentados, usar padrão 
-\series bold
-javadoc
-\series default
-.
- Posteriormente usar o programa 
-\series bold
-doxygen 
-\series default
-para gerar a documentação no formato html.
- 
-\begin_inset Newline newline
-\end_inset
-
-Veja 
-\begin_inset CommandInset href
-LatexCommand href
-target "http://www.doxygen.org/"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Description
