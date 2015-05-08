@@ -1,4 +1,6 @@
-
+Nota: Estes arquivos estão disponibilizados no site: https://github.com 
+Para baixar os mesmos abra um terminal e digite:
+git clone https://github.com/ldsc/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica
 
 Organização do diretório:
 ====================
