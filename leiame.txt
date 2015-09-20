@@ -1,9 +1,15 @@
-Nota: Estes arquivos estão disponibilizados no site: https://github.com 
-Para baixar os mesmos abra um terminal e digite:
+Nota: Estes arquivos estão disponibilizados no site: https://github.com/ldsc 
+
+Como obter os arquivos modelos
+================================
+Abra um terminal e digite:
 git clone https://github.com/ldsc/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica
 
+ou abra um navegador e digite o endereço abaixo
+https://github.com/ldsc/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica/archive/master.zip
+
 Organização do diretório:
-====================
+==========================
 O presente diretório tem três sub-diretórios:
 
 imagens: 
@@ -35,8 +41,8 @@ listagens:
 lyx:  
 	Neste diretório você vai encontrar arquivos do editor de texto científico LyX.
 
-	Nota:
-	=====
+Nota:
+=====
 	O lyx esta disponibilizado em http://www.lyx.org.
 	Baixe a versão mais recente.
 	Instale.
