@@ -122,6 +122,26 @@ rhead{}
 
 \begin_layout Chapter
 Especificação
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Concepção
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+especificação
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -268,25 +288,7 @@ Plotar gráficos usando biblioteca externa CGnuplot (tem livro do gnuplot
 
 \end_deeper
 \begin_layout Section
-Especificação do software - requisitos
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-requisitos
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Nesta seção ...
-\end_layout
-
-\begin_layout Subsection
-Nome do sistema/produto e componentes
+Nome do sistema/produto 
 \end_layout
 
 \begin_layout Standard
@@ -368,8 +370,18 @@ Missão
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Especificação
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+especificação
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1036,14 +1048,24 @@ Casos de uso
 
 \end_inset
 
- do software
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+do software
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 ....tabela descritiva aqui...
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 O que são os diagramas de casos de uso
 \begin_inset Index idx
 status collapsed
@@ -1089,8 +1111,18 @@ ação, adicionando às especificações textuais alguns cenários de uso do sof
  
 \end_layout
 
-\begin_layout Section
-Diagrama de caso de uso geral do software
+\begin_layout Subsection
+Diagrama de caso de uso geral
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ do software
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1155,8 +1187,18 @@ name "cap:Diagrama-caso-uso-geral"
 
 \end_layout
 
-\begin_layout Section
-Diagrama de caso de uso específico do software
+\begin_layout Subsection
+Diagrama de caso de uso específico
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ do software
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
