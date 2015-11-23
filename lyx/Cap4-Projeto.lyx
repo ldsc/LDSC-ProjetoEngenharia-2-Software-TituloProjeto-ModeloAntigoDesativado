@@ -129,10 +129,6 @@ status open
 lhead{
 \backslash
 thechapter - Projeto} 
-\backslash
-rhead{
-\backslash
-thepage} 
 \end_layout
 
 \end_inset

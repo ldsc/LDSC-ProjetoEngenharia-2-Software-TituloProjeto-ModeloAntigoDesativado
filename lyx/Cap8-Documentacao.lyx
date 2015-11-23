@@ -112,10 +112,6 @@ status open
 lhead{
 \backslash
 thechapter - Documentação} 
-\backslash
-rhead{
-\backslash
-thepage} 
 \end_layout
 
 \end_inset
