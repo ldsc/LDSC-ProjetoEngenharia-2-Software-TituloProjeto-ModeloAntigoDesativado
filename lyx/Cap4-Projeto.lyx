@@ -170,7 +170,7 @@ Depois da análise orientada a objeto desenvolve-se o projeto do sistema,
  qual envolve etapas como a definição dos protocolos, da interface API,
  o uso de recursos, a subdivisão do sistema em subsistemas, a alocação dos
  subsistemas ao hardware e a seleção das estruturas de controle, a seleção
- das plataformas do sistema, das biblitoecas externas, dos padrões de projeto,
+ das plataformas do sistema, das bibliotecas externas, dos padrões de projeto,
  além da tomada de decisões conceituais e políticas que formam a infraestrutura
  do projeto.
 \end_layout
@@ -438,7 +438,7 @@ Neste projeto blablabla
 \end_deeper
 \begin_layout Itemize
 Identificação e definição das plataformas a serem suportadas: hardware,
- sistema operacional e linguagem de softwareção.
+ sistema operacional e linguagem de software.
 \end_layout
 
 \begin_deeper
