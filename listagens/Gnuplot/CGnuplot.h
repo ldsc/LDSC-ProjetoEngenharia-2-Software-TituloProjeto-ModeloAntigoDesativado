@@ -35,6 +35,8 @@
 // - Para um melhor uso, consulte o manual do gnuplot,
 //   no GNU/Linux digite: man gnuplot ou info gnuplot.
 //   
+// - Veja aula em http://www.lenep.uenf.br/~bueno/DisciplinaSL/  
+//   
 ////////////////////////////////////////////////////////////////////////////////////////
 #ifndef CGnuplot_h
 #define CGnuplot_h
@@ -69,15 +71,15 @@ private:
   bool    valid;	///< Flag que indica se a sessao do gnuplot esta valida.
   bool    two_dim;	///< true = verdadeiro = 2d, false = falso = 3d.
   int     nplots;	///< Numero de graficos (plots) na sessao.
-  std::string pstyle;	///< Estilo utilizado para visualizacao dads funcoes e dados.
+  std::string pstyle;	///< Estilo utilizado para visualizacao das funcoes e dados.
   std::string smooth;	///< interpolate and approximate data in defined styles (e.g. spline).
   std::vector <std::string> tmpfile_list; ///< Lista com nome dos arquivos temporarios.
 
   //----------------------------------------------------------------------------------------flags
   bool fgrid;           ///< 0 sem grid,   	1 com grid
   bool fhidden3d;       ///< 0 nao oculta, 	1 oculta
-  bool fcontour;		///< 0 sem contorno, 	1 com contorno
-  bool fsurface;		///< 0 sem superficie, 	1 com superficie
+  bool fcontour;	///< 0 sem contorno, 	1 com contorno
+  bool fsurface;	///< 0 sem superficie, 	1 com superficie
   bool flegend;		///< 0 sem legendad, 	1 com legenda
   bool ftitle;		///< 0 sem titulo, 	1 com titulo
   bool fxlogscale;	///< 0 desativa escala log, 1 ativa escala log
@@ -145,7 +147,7 @@ public:
   /// @brief Construtor, seta o estilo do grafico na construcao.
   Gnuplot (const std::string & style = "points");
 
-  /// @brief Construtor, plota um grafico a partir dde um vector, diretamente na construcao.
+  /// @brief Construtor, plota um grafico a partir de um vector, diretamente na construcao.
   Gnuplot (const std::vector < double >&x,
 	   const std::string & title = "",
 	   const std::string & style = "points",
@@ -660,5 +662,5 @@ public:
 
 };
 typedef Gnuplot CGnuplot;
+#endif
 
-#endif // _CGNUPLOT_H_

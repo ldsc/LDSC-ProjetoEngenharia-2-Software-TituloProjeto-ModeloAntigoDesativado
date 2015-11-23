@@ -11,4 +11,5 @@ ps2pdf DocumentoMestre-Trabalho-ProgramacaoPratica.ps
 acroread DocumentoMestre-Trabalho-ProgramacaoPratica.pdf &
 
 mv  DocumentoMestre-Trabalho-ProgramacaoPratica.ps /tmp
+mv  DocumentoMestre-Trabalho-ProgramacaoPratica.dvi /tmp
 
