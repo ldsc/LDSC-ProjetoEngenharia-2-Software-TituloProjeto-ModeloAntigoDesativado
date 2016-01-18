@@ -529,7 +529,7 @@ Um diagrama de pacotes é útil para mostrar as dependências entre as diversas
 O exemplo da Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "cap:Relacionamento-dos-diagramas-estruturais-da-uml"
+reference "fig:Diagrama-de-Pacotes"
 
 \end_inset
 
