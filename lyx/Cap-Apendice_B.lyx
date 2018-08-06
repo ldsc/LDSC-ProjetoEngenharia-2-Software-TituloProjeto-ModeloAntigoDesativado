@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass extbook
 \begin_preamble
 \usepackage {graphicx}
@@ -31,16 +33,18 @@
 \language_package auto
 \inputencoding utf8
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -83,6 +87,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -97,7 +102,10 @@
 \tocdepth 1
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
@@ -216,6 +224,10 @@ s bibliográficas.
 ficas a serem incluídas em sua tese (tudo que você leu, e que pode ser incluído
  na citação da tese e de outros artigos.
  É sua base de dados de citações).
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -252,11 +264,13 @@ Insert Cross-Reference
 \end_layout
 
 \begin_layout Enumerate
-Aqui um exemplo, vou citar material sobre LyX e Latex.
+Aqui um exemplo, vou citar material sobre \SpecialChar LyX
+ e Latex.
  Veja maiores informações sobre latex em 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "SL-latex-companion,SL-latex-donald,SL-latex-demo,SL-latex-Guide2e,SL-latex-lamport,SL-latex-lyxEF,SL-latex-lyxtut,SL-latex-lyxUG"
+literal "true"
 
 \end_inset
 
@@ -285,25 +299,36 @@ Citações no meio do texto
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 Segundo 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "SL-latex-companion"
+literal "true"
 
 \end_inset
 
  asldkjasldkajsdlkajsdlaksjd
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Segundo 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "SL-latex-companion,SL-latex-donald,SL-latex-demo,SL-latex-Guide2e,SL-latex-lamport,SL-latex-lyxEF,SL-latex-lyxtut,SL-latex-lyxUG"
+literal "true"
 
 \end_inset
 
  asldkjasldkajsdlkajsdlaksjd
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -315,6 +340,7 @@ asldkja
 \begin_inset CommandInset citation
 LatexCommand nocite
 key "SL-latex-companion"
+literal "true"
 
 \end_inset
 
@@ -326,6 +352,7 @@ asldkjasl
 \begin_inset CommandInset citation
 LatexCommand nocite
 key "SL-latex-companion,SL-latex-donald,SL-latex-demo,SL-latex-Guide2e,SL-latex-lamport,SL-latex-lyxEF,SL-latex-lyxtut,SL-latex-lyxUG"
+literal "true"
 
 \end_inset
 
@@ -343,8 +370,9 @@ Citações usando natbib
 \begin_layout Plain Layout
 Requer comando: 
 \backslash
-usepackage[options]{natbib}, no LyX, Documento->Configurações->->Bibliografia->E
-stiloCitação->Natbib.
+usepackage[options]{natbib}, no \SpecialChar LyX
+, Documento->Configurações->->Bibliografia->Esti
+loCitação->Natbib.
  
 \end_layout
 
@@ -580,13 +608,15 @@ Informações adicionais
 \end_layout
 
 \begin_layout Itemize
-Manuais do LyX (precisa ler!)
+Manuais do \SpecialChar LyX
+ (precisa ler!)
 \end_layout
 
 \begin_layout Itemize
 \begin_inset CommandInset href
 LatexCommand href
 target "http://chem-e.org/comando-cite-e-citeonline-no-abntex/"
+literal "false"
 
 \end_inset
 
@@ -597,6 +627,7 @@ target "http://chem-e.org/comando-cite-e-citeonline-no-abntex/"
 \begin_inset CommandInset href
 LatexCommand href
 target "http://win.ua.ac.be/~nschloe/content/bibtex-how-cite-website"
+literal "false"
 
 \end_inset
 
@@ -607,6 +638,7 @@ target "http://win.ua.ac.be/~nschloe/content/bibtex-how-cite-website"
 \begin_inset CommandInset href
 LatexCommand href
 target "http://chem-e.org/comando-apud-e-apudonline-no-abntex/"
+literal "false"
 
 \end_inset
 
@@ -617,6 +649,7 @@ target "http://chem-e.org/comando-apud-e-apudonline-no-abntex/"
 \begin_inset CommandInset href
 LatexCommand href
 target "http://en.wikibooks.org/wiki/LaTeX/Bibliography_Management"
+literal "false"
 
 \end_inset
 
@@ -625,10 +658,20 @@ target "http://en.wikibooks.org/wiki/LaTeX/Bibliography_Management"
 
 \begin_layout Standard
 \noindent
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\noindent
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "bibliografia"
 options "abnt-alf"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
