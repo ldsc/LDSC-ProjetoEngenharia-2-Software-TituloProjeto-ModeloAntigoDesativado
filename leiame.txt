@@ -57,15 +57,20 @@ Nota:
 	==============================
 	- Se for usar o Windows instale a versão completa do LyX, disponível no site:
 	http://wiki.lyx.org/Windows/Windows
-	- Veja o que diz o site em  30/09/2015:
-	Current stable version: 2.1.4
-	Standard installer: LyX-2.1.4-Installer-1.exe (37 MB). 
-	This installer requires that LaTeX (MikTeX or TeXLive) are already installed.
 
-	Bundle with MiKTeX: LyX-2.1.4-Bundle-1.exe (215 MB). 
-	This installer is designed for new users, additionally to the standard 	installer, 
-	it includes MiKTeX and as Option the bibliography manager JabRef.
-	Ou seja, a versão completa, com mais de 200 MB vem completa, instale esta!
+	- Veja o que diz o site em  20/08-2020:
+	Current stable version: 2.3.0
+	Standard installer: LyX-230-Installer-005.exe (58 MB). This installer requires that LaTeX (MikTeX or TeXLive) are 
+	already installed.
+	Previous stable version: 2.2.3
+	Standard installer: LyX-230-Installer-005.exe (53 MB). This installer requires that LaTeX (MikTeX or TeXLive) 
+	are already installed.
+	
+	Versions for Cygwin
+	If you use Cygwin on Windows, it may be more convenient to use the cygwin binary, since latex, python, etc. 
+	are all available from cygwin. You should download lyx-2.3.0-cygwin.tar.gz, un-tar it using Cygwin (not native) tools, 
+	and follow the instructions . See LyXOnCygwin for more information.
+
 
 	Dica abntex:
 	=============
@@ -78,4 +83,10 @@ Nota:
 	lyx-common-2.1.3-1.fc21.noarch
 	lyx-2.1.3-1.fc21.x86_64
 	lyx-fonts-2.1.3-1.fc21.noarch
-
+	
+	Na máquina atual tenho
+	texlive-abntex2-svn49248-19.fc31.noarch
+	lyx-fonts-2.3.5-1.fc31.noarch
+	lyx-common-2.3.5-1.fc31.noarch
+	lyx-2.3.5-1.fc31.x86_64
+	
