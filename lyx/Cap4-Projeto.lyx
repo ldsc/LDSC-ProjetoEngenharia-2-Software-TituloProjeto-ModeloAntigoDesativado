@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass extbook
 \begin_preamble
 \usepackage {graphicx}
@@ -30,16 +32,18 @@
 \language_package auto
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -70,6 +74,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -84,7 +89,10 @@
 \tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
@@ -187,6 +195,7 @@ Segundo
 \begin_inset CommandInset citation
 LatexCommand cite
 key "prog-UML-Rumbaugh,prog-UML-blaha"
+literal "true"
 
 \end_inset
 
@@ -207,6 +216,10 @@ Protocolos
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -219,6 +232,10 @@ Definição dos protocolos de comunicação entre os diversos elementos externos
 (como dispositivos).
  Por exemplo: se o sistema envolve o uso dos nós de um cluster, devem ser
  considerados aspectos como o protocolo de comunicação entre os nós do cluster.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -235,6 +252,10 @@ Definição dos protocolos de comunicação entre os diversos elementos internos
 
 (como objetos).
  
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -245,6 +266,10 @@ Neste projeto blablabla
 \end_deeper
 \begin_layout Itemize
 Definição da interface API de suas bibliotecas e sistemas.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -256,6 +281,10 @@ Neste projeto blablabla
 \begin_layout Itemize
 Definição do formato dos arquivos gerados pelo software.
  Por exemplo: prefira formatos abertos, como arquivos txt e xml.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -277,6 +306,10 @@ Recursos
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -284,6 +317,10 @@ Recursos
 Identificação e alocação dos recursos globais, como os recursos do sistema
  serão alocados, utilizados, compartilhados e liberados.
  Implicam modificações no diagrama de componentes.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -295,6 +332,10 @@ Neste projeto blablabla
 \begin_layout Itemize
 Identificação da necessidade do uso de banco de dados.
  Implicam em modificações nos diagramas de atividades e de componentes.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -310,6 +351,10 @@ Identificação da necessidade de sistemas de armazenamento de massa.
 storage
 \emph default
  em um sistema de cluster ou sistemas de backup.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -331,6 +376,10 @@ Controle
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -339,6 +388,10 @@ Identificação e seleção da implementação de controle, seqüencial ou conco
  baseado em procedimentos ou eventos.
  Implicam modificações no diagrama de execução.
  
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -349,6 +402,10 @@ Neste projeto blablabla
 \end_deeper
 \begin_layout Itemize
 Identificação das condições extremas e de prioridades.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -361,6 +418,10 @@ Neste projeto blablabla
 Identificação da necessidade de otimização.
  Por exemplo: prefira sistemas com grande capacidade de memória; prefira
  vários hds pequenos a um grande.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -376,6 +437,10 @@ loops
 \emph default
  de controle e das escalas de tempo.
  
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -385,9 +450,13 @@ Neste projeto blablabla
 
 \end_deeper
 \begin_layout Itemize
-Identificação de concorrências -- quais algoritmos podem ser implementados
+Identificação de concorrências – quais algoritmos podem ser implementados
  usando processamento paralelo.
  
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -409,12 +478,20 @@ Plataformas
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 Identificação das estruturas arquitetônicas comuns.
  
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -428,6 +505,10 @@ Identificação de subsistemas relacionados à plataforma selecionada.
  Podem implicar em modificações no diagrama de pacotes e no diagrama de
  componentes.
  
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -439,6 +520,10 @@ Neste projeto blablabla
 \begin_layout Itemize
 Identificação e definição das plataformas a serem suportadas: hardware,
  sistema operacional e linguagem de software.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -449,6 +534,10 @@ Neste projeto blablabla
 \end_deeper
 \begin_layout Itemize
 Seleção das bibliotecas externas a serem utilizadas.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -459,7 +548,11 @@ Neste projeto blablabla
 \end_deeper
 \begin_layout Itemize
 Seleção da biblioteca utilizada para montar a interface gráfica do software
- -- GDI.
+ – GDI.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -470,8 +563,12 @@ Neste projeto blablabla
 \end_deeper
 \begin_layout Itemize
 Seleção do ambiente de desenvolvimento para montar a interface de desenvolviment
-o -- IDE.
+o – IDE.
  
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -483,6 +580,10 @@ Neste projeto blablabla
 \end_deeper
 \begin_layout Enumerate
 Padrões de projeto
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -490,6 +591,10 @@ Padrões de projeto
 Normalmente os padrões de projeto são identificados e passam a fazer parte
  de uma biblioteca de padrões da empresa.
  Mas isto só ocorre após a realização de diversos projetos.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -511,7 +616,7 @@ se um item não for pertinente; pode ser retirado; ,mas somente na versão
 \end_deeper
 \end_deeper
 \begin_layout Section
-Projeto orientado a objeto -- POO
+Projeto orientado a objeto – POO
 \begin_inset Index idx
 status collapsed
 
@@ -582,7 +687,7 @@ modelo
  estrutural
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Efeito-do-projeto-no-modelo-estrutural"
+name "subsec:Efeito-do-projeto-no-modelo-estrutural"
 
 \end_inset
 
@@ -592,6 +697,10 @@ name "sub:Efeito-do-projeto-no-modelo-estrutural"
 \begin_layout Itemize
 Adicionar nos diagramas de pacotes as bibliotecas e subsistemas selecionados
  no projeto do sistema (exemplo: a biblioteca gráfica selecionada).
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -603,6 +712,10 @@ Neste projeto blablabla
 \begin_layout Itemize
 Novas classes e associações oriundas das bibliotecas selecionadas e da linguagem
  escolhida devem ser acrescentadas ao modelo.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -613,6 +726,10 @@ Neste projeto blablabla
 \end_deeper
 \begin_layout Itemize
 Estabelecer as dependências e restrições associadas à plataforma escolhida.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -635,7 +752,7 @@ modelo
  dinâmico
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Efeito-do-projeto-no-modelo-dinamico"
+name "subsec:Efeito-do-projeto-no-modelo-dinamico"
 
 \end_inset
 
@@ -645,6 +762,10 @@ name "sub:Efeito-do-projeto-no-modelo-dinamico"
 \begin_layout Itemize
 Revisar os diagramas de seqüência e de comunicação considerando a plataforma
  escolhida.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -657,6 +778,10 @@ Neste projeto blablabla
 Verificar a necessidade de se revisar, ampliar e adicionar novos diagramas
  de máquinas de estado e de atividades.
  
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -679,7 +804,7 @@ atributos
 
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Efeito-do-projeto-nos-atributos"
+name "subsec:Efeito-do-projeto-nos-atributos"
 
 \end_inset
 
@@ -690,6 +815,10 @@ name "sub:Efeito-do-projeto-nos-atributos"
 Atributos novos podem ser adicionados a uma classe, como, por exemplo, atributos
  específicos de uma determinada linguagem de softwareção (acesso a disco,
  ponteiros, constantes e informações correlacionadas).
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -727,6 +856,10 @@ Em função da plataforma escolhida, verifique as possíveis alterações nos
  métodos.
  O projeto do sistema costuma afetar os métodos de acesso aos diversos dispositi
 vos (exemplo: hd, rede).
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -742,6 +875,10 @@ De maneira geral os métodos devem ser divididos em dois tipos: i) tomada
  ii) realização de processamentos, podem ser otimizados e em alguns casos
  o polimorfismo deve ser evitado.
  
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -754,6 +891,10 @@ Neste projeto blablabla
 Algoritmos complexos podem ser subdivididos.
  Verifique quais métodos podem ser otimizados.
  Pense em utilizar algoritmos prontos como os da STL (algoritmos genéricos).
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -765,6 +906,10 @@ Neste projeto blablabla
 \begin_layout Itemize
 Responda a pergunta: os métodos da classes estão dando resposta às responsabilid
 ades da classe?
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -775,6 +920,10 @@ Neste projeto blablabla
 \end_deeper
 \begin_layout Itemize
 Revise os diagramas de classes, de seqüência e de máquina de estado.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -821,6 +970,10 @@ Heranças
 Reorganização das classes e dos métodos (criar métodos genéricos com parâmetros
  que nem sempre são necessários e englobam métodos existentes).
  
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -833,6 +986,10 @@ Neste projeto blablabla
 Abstração do comportamento comum (duas classes podem ter uma superclasse
  em comum).
  
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -845,6 +1002,10 @@ Neste projeto blablabla
 Utilização de delegação para compartilhar a implementação (quando você cria
  uma herança irreal para reaproveitar código).
  Usar com cuidado.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -855,6 +1016,10 @@ Neste projeto blablabla
 \end_deeper
 \begin_layout Itemize
 Revise as heranças no diagrama de classes.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -891,6 +1056,10 @@ Associações
 Deve-se definir na fase de projeto como as associações serão implementadas,
  se obedecerão um determinado padrão ou não.
  
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -906,6 +1075,10 @@ Se existe uma relação de "muitos", pode-se implementar a associação com
  o objeto que deseja acessar) e o dicionário retorna um valor (um ponteiro)
  para o objeto correto.
  
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -917,6 +1090,10 @@ Neste projeto blablabla
 \begin_layout Itemize
 Evite percorrer várias associações para acessar dados de classes distantes.
  Pense em adicionar associações diretas.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -943,6 +1120,10 @@ otimizações
 Faça uma análise de aspectos relativos à otimização do sistema.
  Lembrando que a otimização deve ser desenvolvida por analistas/desenvolvedores
  experientes.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -954,6 +1135,10 @@ Neste projeto blablabla
 \begin_layout Itemize
 Identifique pontos a serem otimizados em que podem ser utilizados processos
  concorrentes.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -970,6 +1155,10 @@ Pense em incluir bibliotecas otimizadas.
 Se o acesso a determinados objetos (atributos/métodos) requer um caminho
  longo (exemplo: A->B->C->D.atributo), pense em incluir associações extras
  (exemplo: A-D.atributo).
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -980,6 +1169,10 @@ Neste projeto blablabla
 \end_deeper
 \begin_layout Itemize
 Atributos auxiliares podem ser incluídos.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -990,6 +1183,10 @@ Neste projeto blablabla
 \end_deeper
 \begin_layout Itemize
 A ordem de execução pode ser alterada.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -1000,6 +1197,10 @@ Neste projeto blablabla
 \end_deeper
 \begin_layout Itemize
 Revise as associações nos diagramas de classes.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -1231,7 +1432,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Diagrama de implantação.
+Diagrama de implantação
 \begin_inset CommandInset label
 LatexCommand label
 name "cap:Diagrama-de-implantação."

@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass extbook
 \begin_preamble
 
@@ -31,16 +33,18 @@
 \language_package auto
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -71,6 +75,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -85,7 +90,10 @@
 \tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
@@ -244,7 +252,7 @@ especificações
 , o formato dos arquivos de disco; se vai existir um help e seu formato.
  Podem ser especificadas características de desempenho.
  O cliente define o que deve obrigatoriamente ser satisfeito e o que é opcional
- -- isto é, tudo o que o sistema/software deve ser.
+ – isto é, tudo o que o sistema/software deve ser.
  
 \end_layout
 
@@ -260,6 +268,10 @@ NOTA
 \end_inset
 
 IMPORTANTE:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -292,7 +304,7 @@ Nome do sistema/produto
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="14cm">
+<features tabularvalignment="middle" tabularwidth="14cm">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="8cm">
 <row>
@@ -417,7 +429,7 @@ coloque aqueles que fazem sentido para seu sistema
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="14cm">
+<features tabularvalignment="middle" tabularwidth="14cm">
 <column alignment="block" valignment="top">
 <column alignment="block" valignment="top" width="11.5cm">
 <row>
@@ -457,7 +469,7 @@ O sistema deve conter uma base de dados xxx.
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="14cm">
+<features tabularvalignment="middle" tabularwidth="14cm">
 <column alignment="center" valignment="top">
 <column alignment="block" valignment="top" width="11.5cm">
 <row>
@@ -496,7 +508,7 @@ O usuário deverá ter liberdade para xxxx.
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="14cm">
+<features tabularvalignment="middle" tabularwidth="14cm">
 <column alignment="center" valignment="top">
 <column alignment="block" valignment="top" width="11.5cm">
 <row>
@@ -538,7 +550,7 @@ Deve permitir o carregamento de arquivos criados pelo software.
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="14cm">
+<features tabularvalignment="middle" tabularwidth="14cm">
 <column alignment="center" valignment="top">
 <column alignment="block" valignment="top" width="11.5cm">
 <row>
@@ -580,7 +592,7 @@ Deve permitir a escolha da equação xxx.
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="14cm">
+<features tabularvalignment="middle" tabularwidth="14cm">
 <column alignment="center" valignment="top">
 <column alignment="block" valignment="top" width="11.5cm">
 <row>
@@ -619,7 +631,7 @@ O usuário deve ter tal liberdade para escolher xxx.
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="14cm">
+<features tabularvalignment="middle" tabularwidth="14cm">
 <column alignment="center" valignment="top">
 <column alignment="block" valignment="top" width="11.5cm">
 <row>
@@ -667,7 +679,7 @@ Requisitos não funcionais
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="14cm">
+<features tabularvalignment="middle" tabularwidth="14cm">
 <column alignment="center" valignment="top">
 <column alignment="block" valignment="top" width="11cm">
 <row>
@@ -709,7 +721,7 @@ Os cálculos devem ser feitos utilizando-se xxxx.
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="14cm">
+<features tabularvalignment="middle" tabularwidth="14cm">
 <column alignment="center" valignment="top">
 <column alignment="block" valignment="top" width="11cm">
 <row>
@@ -764,10 +776,10 @@ Casos de uso
 
 \end_inset
 
- do sistema -- cenários
+ do sistema – cenários
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Casos-de-uso-do-programa"
+name "subsec:Casos-de-uso-do-programa"
 
 \end_inset
 
@@ -789,6 +801,7 @@ Segundo
 \begin_inset CommandInset citation
 LatexCommand cite
 key "prog-UML-blaha"
+literal "true"
 
 \end_inset
 
@@ -821,6 +834,7 @@ Segundo
 \begin_inset CommandInset citation
 LatexCommand cite
 key "prog-EngSof-Pressman"
+literal "true"
 
 \end_inset
 
@@ -830,6 +844,7 @@ key "prog-EngSof-Pressman"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "prog-EngSof-Pressman"
+literal "true"
 
 \end_inset
 
@@ -883,7 +898,7 @@ name "cap:Exemplo-de-um-caso-de-uso (tabela)"
 
 \end_inset
 
-.
+
 \end_layout
 
 \end_inset
@@ -902,7 +917,7 @@ name "cap:Exemplo-de-um-caso-de-uso (tabela)"
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="block" valignment="top" width="10cm">
 <row>
@@ -1165,7 +1180,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Diagrama de caso de uso -- Caso de uso geral
+Diagrama de caso de uso – Caso de uso geral
 \begin_inset CommandInset label
 LatexCommand label
 name "cap:Diagrama-caso-uso-geral"
@@ -1260,14 +1275,14 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Diagrama de caso de uso específico -- Título
+Diagrama de caso de uso específico – Título
 \begin_inset CommandInset label
 LatexCommand label
 name "cap:Diagrama-de-caso-de-uso-especifico:Titulo"
 
 \end_inset
 
-.
+
 \end_layout
 
 \end_inset

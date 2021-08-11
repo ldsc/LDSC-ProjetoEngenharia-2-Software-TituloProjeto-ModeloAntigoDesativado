@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass extbook
 \begin_preamble
 
@@ -31,16 +33,18 @@
 \language_package auto
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -71,6 +75,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -85,7 +90,10 @@
 \tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
@@ -173,7 +181,7 @@ Análise de domínio
 
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Análise-de-domínio"
+name "subsec:Análise-de-domínio"
 
 \end_inset
 
@@ -218,6 +226,7 @@ Manter contato com especialistas que tenham domínio dos conceitos envolvidos.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "prog-UML-MartimFowler"
+literal "true"
 
 \end_inset
 
@@ -241,6 +250,7 @@ Na elaboração deve-se analisar a possibilidade de se reaproveitar projetos
 \begin_inset CommandInset citation
 LatexCommand cite
 key "prog-EngSof-Pressman"
+literal "true"
 
 \end_inset
 
@@ -293,10 +303,11 @@ name "cap:Análise-de-domínio."
 \begin_inset CommandInset citation
 LatexCommand cite
 key "prog-EngSof-Pressman"
+literal "true"
 
 \end_inset
 
-).
+)
 \end_layout
 
 \end_inset
@@ -382,10 +393,10 @@ Identificação de pacotes
 
 \end_inset
 
- -- assuntos
+ – assuntos
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Identificação-de-pacotes"
+name "subsec:Identificação-de-pacotes"
 
 \end_inset
 
@@ -439,7 +450,7 @@ Preste atenção a semelhanças na forma.
 \end_layout
 
 \begin_layout Section
-Identificação de pacotes -- assuntos
+Identificação de pacotes – assuntos
 \end_layout
 
 \begin_layout Standard
@@ -476,7 +487,7 @@ Diagrama de pacotes
 
 
 \emph default
- -- assuntos
+ – assuntos
 \begin_inset Index idx
 status collapsed
 
@@ -511,7 +522,7 @@ Diagrama de pacotes (assuntos)
 
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:diagrama de assuntos-pacotes"
+name "subsec:diagrama de assuntos-pacotes"
 
 \end_inset
 
@@ -541,7 +552,7 @@ reference "fig:Diagrama-de-Pacotes"
 \end_layout
 
 \begin_layout Section
-Diagrama de pacotes -- assuntos
+Diagrama de pacotes – assuntos
 \end_layout
 
 \begin_layout Standard
