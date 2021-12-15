@@ -1,12 +1,13 @@
 
 1) Copiar os modelos para seu computador
-Abra um terminal e faça o download do modelo de projeto, abaixo os comandos:
+Abra um terminal e faça o download do modelo de projeto, abaixo os comandos para um terminal em máquina GNU/Linux ou Windows:
 cd
 mkdir workdir
 cd workdir
 git clone https://github.com/ldsc/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica
 
 Pronto o modelo já esta no seu computador.
+
 
 2) Criar uma conta no github
 O primeiro passo é criar sua conta no github (se ainda não tem).
@@ -25,7 +26,7 @@ cd workdir
 git clone https://github.com/seuLogin/ProjetoEngenharia-Titulo-SeuNome 
 
 5) Copiar os arquivos do modelo para dentro do seu projeto
-Usando o navegador de arquivos copiar os diretórios "imagens", "listagens", "lyx" e o arquivo leiame.txt para dentro do diretório "workdir/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica".
+Usando o navegador de arquivos copiar os diretórios "imagens", "src", "test", "doc", "lyx" e o arquivo leiame.txt para dentro do diretório "workdir/Engenharia-Titulo-SeuNome".
 
 Agora você precisa informar o git para adicionar estes arquivos novos usando o comando:
 git status
