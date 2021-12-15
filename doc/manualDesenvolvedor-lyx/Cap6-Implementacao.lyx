@@ -680,7 +680,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CAplicacao.}, label={CAp
-licacao-h}] {../listagens/CAplicacao.h}
+licacao-h}] {../../src/CAplicacao.h}
 \end_layout
 
 \end_inset
@@ -721,7 +721,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CAplicacao.},
- label={CAplicacao-cpp}] {../listagens/CAplicacao.cpp}
+ label={CAplicacao-cpp}] {../../src/CAplicacao.cpp}
 \end_layout
 
 \end_inset
@@ -764,7 +764,7 @@ lstinputlisting[ caption={
 
 Arquivo de implementação da função 
 \backslash
-texttt{main()}.}, label={programa-cpp}] {../listagens/Programa.cpp}
+texttt{main()}.}, label={programa-cpp}] {../../src/Programa.cpp}
 \end_layout
 
 \end_inset
@@ -798,7 +798,7 @@ lstset{language=,backgroundcolor=
 \backslash
 color{azulclaro}}   
 \backslash
-lstinputlisting[caption=] {../listagens/Programa.out}   
+lstinputlisting[caption=] {../../src/Programa.out}   
 \end_layout
 
 \begin_layout Plain Layout

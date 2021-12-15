@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass extbook
 \begin_preamble
 \usepackage {graphicx}
@@ -11,22 +13,24 @@
 \renewenvironment{center}{\par\centering}{\par}
 \end_preamble
 \use_default_options false
-\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\master /home2/andreduartebueno/workdir/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica/doc/manualDesenvolvedor-lyx/DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
 \maintain_unincluded_children false
 \language brazilian
 \language_package auto
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -57,6 +61,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -71,7 +76,10 @@
 \tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
@@ -115,7 +123,7 @@ AOO
 
 \end_inset
 
- -- Análise Orientada a Objeto
+ – Análise Orientada a Objeto
 \begin_inset Index idx
 status collapsed
 
@@ -137,8 +145,8 @@ name "sec:AOO"
 
 \begin_layout Standard
 A terceira etapa do desenvolvimento de um projeto de engenharia, no nosso
- caso um software aplicado a engenharia de petróleo, é a AOO -- Análise
- Orientada a Objeto.
+ caso um software aplicado a engenharia de petróleo, é a AOO – Análise Orientada
+ a Objeto.
  A AOO utiliza algumas regras para identificar os objetos de interesse,
  as relacões entre os pacotes, as classes, os atributos, os métodos, as
  heranças, as associações, as agregações, as composições e as dependências.
@@ -206,7 +214,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/fig-3-9-Diagrama-de-classes-heranca.png
+	filename imagens/fig-3-9-Diagrama-de-classes-heranca.png
 	width 100text%
 
 \end_inset
@@ -233,10 +241,6 @@ name "cap:Diagrama-de-classes"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -260,7 +264,7 @@ deve ocupar toda a página impressa! se necessário rotacionar 90 graus; SE
 Dicionário de classes
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Dicionário-de-classes"
+name "subsec:Dicionário-de-classes"
 
 \end_inset
 
@@ -280,7 +284,7 @@ Classe CNomeClasse: representa.....
 \end_layout
 
 \begin_layout Section
-Diagrama de seqüência -- eventos
+Diagrama de seqüência – eventos
 \begin_inset Index idx
 status collapsed
 
@@ -313,7 +317,7 @@ Diagrama de sequência
 
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:diagrama de sequência"
+name "subsec:diagrama de sequência"
 
 \end_inset
 
@@ -371,7 +375,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/fig-3-12-Diagrama-de-eventos-sequencia-prova.png
+	filename imagens/fig-3-12-Diagrama-de-eventos-sequencia-prova.png
 	lyxscale 85
 	width 100text%
 
@@ -445,7 +449,7 @@ comunicação
 
 \end_inset
 
- -- colaboração
+ – colaboração
 \begin_inset Index idx
 status collapsed
 
@@ -458,7 +462,7 @@ colaboração
 
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Diagrama-de-Comunicação"
+name "subsec:Diagrama-de-Comunicação"
 
 \end_inset
 
@@ -498,7 +502,7 @@ No diagrama de comunicação o foco é a interação e a troca de mensagens e
 Veja na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "sub:Diagrama-de-Comunicação"
+reference "subsec:Diagrama-de-Comunicação"
 
 \end_inset
 
@@ -516,7 +520,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/DiagComunicacao-CalculoAreaFuncao.png
+	filename imagens/DiagComunicacao-CalculoAreaFuncao.png
 	lyxscale 85
 	width 100text%
 
@@ -573,7 +577,7 @@ Diagrama de máquina de estado
 
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:diagrama de estados"
+name "subsec:diagrama de estados"
 
 \end_inset
 
@@ -624,7 +628,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/fig-3-14-Diagrama-de-estados-aluno.png
+	filename imagens/fig-3-14-Diagrama-de-estados-aluno.png
 	lyxscale 85
 	width 100text%
 
@@ -708,7 +712,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/DiagAtividade-MetodoArea.png
+	filename imagens/DiagAtividade-MetodoArea.png
 	lyxscale 85
 	width 100text%
 

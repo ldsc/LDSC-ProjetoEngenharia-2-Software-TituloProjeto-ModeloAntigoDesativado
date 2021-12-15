@@ -155,7 +155,7 @@ Neste capítulo do projeto de engenharia veremos questões associadas ao projeto
 \begin_layout Section
 Projeto do sistema
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Projeto do sistema
@@ -207,7 +207,7 @@ literal "true"
 \begin_layout Enumerate
 Protocolos
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Protocolos
@@ -297,7 +297,7 @@ Neste projeto blablabla
 \begin_layout Enumerate
 Recursos
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Recursos
@@ -367,7 +367,7 @@ Neste projeto blablabla
 \begin_layout Enumerate
 Controle
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Controle
@@ -469,7 +469,7 @@ Neste projeto blablabla
 \begin_layout Enumerate
 Plataformas
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Plataformas
@@ -618,7 +618,7 @@ se um item não for pertinente; pode ser retirado; ,mas somente na versão
 \begin_layout Section
 Projeto orientado a objeto – POO
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 POO
@@ -628,7 +628,7 @@ POO
 
 
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Projeto orientado a objeto
@@ -676,7 +676,7 @@ Exemplo: na análise você define que existe um método para salvar um arquivo
 \begin_layout Subsubsection
 Efeitos do projeto no modelo
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 modelo
@@ -741,7 +741,7 @@ Neste projeto blablabla
 \begin_layout Subsubsection
 Efeitos do projeto no modelo
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 modelo
@@ -793,7 +793,7 @@ Neste projeto blablabla
 \begin_layout Subsubsection
 Efeitos do projeto nos atributos
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 atributos
@@ -830,7 +830,7 @@ Neste projeto blablabla
 \begin_layout Subsubsection
 Efeitos do projeto nos métodos
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 métodos
@@ -840,7 +840,7 @@ métodos
 
 
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Efeitos do projeto nos métodos
@@ -935,7 +935,7 @@ Neste projeto blablabla
 \begin_layout Subsubsection
 Efeitos do projeto nas heranças
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 heranças
@@ -945,7 +945,7 @@ heranças
 
 
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Efeitos do projeto nas heranças
@@ -955,7 +955,7 @@ Efeitos do projeto nas heranças
 
 
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Heranças
@@ -1031,7 +1031,7 @@ Neste projeto blablabla
 \begin_layout Subsubsection
 Efeitos do projeto nas associações
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Efeitos do projeto nas associações
@@ -1041,7 +1041,7 @@ Efeitos do projeto nas associações
 
 
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Associações
@@ -1105,7 +1105,7 @@ Neste projeto blablabla
 \begin_layout Subsubsection
 Efeitos do projeto nas otimizações
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 otimizações
@@ -1220,7 +1220,7 @@ Depois de revisados os diagramas da análise você pode montar dois diagramas
 \begin_layout Section
 Diagrama de componentes
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Diagrama de componentes
@@ -1311,12 +1311,12 @@ Neste projeto blablabla
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/fig-3-16-Diagrama-de-componentes.png
+	filename imagens/fig-3-16-Diagrama-de-componentes.png
 	lyxscale 90
 	width 100text%
 
@@ -1352,7 +1352,7 @@ name "cap:Diagrama-de-componentes"
 \begin_layout Section
 Diagrama de implantação
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Diagrama de execução
@@ -1419,7 +1419,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/fig-3-17-diagrama-execucao.png
+	filename imagens/fig-3-17-diagrama-execucao.png
 	lyxscale 90
 	width 100text%
 

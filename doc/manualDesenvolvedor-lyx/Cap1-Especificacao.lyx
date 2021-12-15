@@ -1168,7 +1168,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/DiagCasoDeUso-AnaliseDosResultados.png
+	filename imagens/DiagCasoDeUso-AnaliseDosResultados.png
 	width 100text%
 
 \end_inset
@@ -1263,7 +1263,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/DiagCasoDeUso-AnaliseDosResultados.png
+	filename imagens/DiagCasoDeUso-AnaliseDosResultados.png
 	width 100text%
 
 \end_inset
