@@ -27,10 +27,11 @@
 \end_preamble
 \options normaltoc, sumarioincompleto
 \use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
 \maintain_unincluded_children false
 \language brazilian
 \language_package auto
-\inputencoding auto
+\inputencoding utf8
 \fontencoding global
 \font_roman "default" "default"
 \font_sans "default" "default"
@@ -52,7 +53,7 @@
 \paperfontsize 12
 \spacing onehalf
 \use_hyperref true
-\pdf_title "Projeto Engenharia: Desenvolvimento Software Aplicado XXXXX"
+\pdf_title "Título da Monografia - Dissertação - Tese"
 \pdf_author "Nome do Autor"
 \pdf_subject "Descrever assunto"
 \pdf_keywords "Copiar do resumo"
@@ -79,7 +80,7 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
-\biblio_style plain
+\biblio_style apalike
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -98,7 +99,7 @@
 \rightmargin 20mm
 \bottommargin 20mm
 \secnumdepth 2
-\tocdepth 2
+\tocdepth 1
 \paragraph_separation indent
 \paragraph_indentation default
 \is_math_indent 0
@@ -108,7 +109,7 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
@@ -117,140 +118,35 @@
 
 \begin_body
 
-\begin_layout Standard
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap0-Capa.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap0-Introducao-Escopo-Objetivos-Metodologia.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap1-Concepcao.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap2-Elaboracao.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap3-AnaliseOrientadaAObjeto.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap4-Projeto.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap5-Ciclos-Planejamento-Detalhamento.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap6-Ciclos-Construcao-Implementacao.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap7-Teste.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap8-Documentacao.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align block
-\begin_inset ERT
+\begin_layout Chapter
+Manual do Usuário
+\begin_inset Index idx
 status open
 
 \begin_layout Plain Layout
-
-
-\backslash
-lhead{Referências} 
-\backslash
-chead{} 
-\backslash
-rhead{}
+Manual do Usuário
 \end_layout
 
 \end_inset
 
 
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-bibfiles "bibliografia"
-options "apalike"
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Manual-do-Usuário"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Instalação
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Instalação
+\end_layout
 
 \end_inset
 
@@ -258,13 +154,76 @@ options "apalike"
 \end_layout
 
 \begin_layout Standard
-\align block
+O software foi disponibilizado no site 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://github.com/ldsc"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Lá você encontra instruções atualizadas para baixar e instalar.
+\end_layout
+
+\begin_layout Subsection
+Dependências
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Dependências
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para compilar o software é necessário atender as seguintes dependências:
+\end_layout
+
+\begin_layout Itemize
+Instalar o compilador g++ da GNU disponível em 
+\begin_inset CommandInset href
+LatexCommand href
+name "http://gcc.gnu.org"
+target "http://gcc.gnu.org"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Para instalar no GNU/Linux use o comando 
+\family typewriter
+dnf install gcc
+\family default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Instalar a biblioteca Qt disponível em 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.qt.io/download"
+
+\end_inset
+
+.
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-os arquivos a seguir contém informações para ajudar quem esta fazendo o
- trabalho; você deve apagá-los.
+coloque todas as dependências e links para sites
 \end_layout
 
 \end_inset
@@ -273,14 +232,30 @@ os arquivos a seguir contém informações para ajudar quem esta fazendo o
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
+\begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
+Precisa carregar o software no github do ldsc e capturar uma imagem do site
+ gerado;
+\end_layout
+
+\begin_layout Plain Layout
+Colocar aqui.
+\end_layout
+
+\end_inset
 
 
-\backslash
-appendix
+\end_layout
+
+\begin_layout Section
+Interface gráfica
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Interface gráfica
 \end_layout
 
 \end_inset
@@ -289,17 +264,20 @@ appendix
 \end_layout
 
 \begin_layout Standard
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap9-Documentacao-ManualUsuario.lyx"
+A interface do programa é apresentada na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Imagem da Interface Gráfica"
 
 \end_inset
 
+.
+\begin_inset Note Note
+status open
 
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap-Apendice_A.lyx"
+\begin_layout Plain Layout
+na imagem simulador desenvolvido pelo aluno Nicholas
+\end_layout
 
 \end_inset
 
@@ -307,17 +285,44 @@ filename "Cap-Apendice_A.lyx"
 \end_layout
 
 \begin_layout Standard
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap-Apendice_B.lyx"
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/andreduartebueno/workdir/Projeto-TCC-SimuladorDifusaoTermica-Nicholas-Bueno-Guilherme/imagens/Interface-vFinal.png
+	lyxscale 30
+	width 100text%
+	height 85in
+	keepAspectRatio
 
 \end_inset
 
 
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap-Apendice_C-CriandoProjetoGithub.lyx"
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Imagem da Interface Gráfica
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Imagem da Interface Gráfica"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -325,15 +330,27 @@ filename "Cap-Apendice_C-CriandoProjetoGithub.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset index_print
-LatexCommand printindex
-type "idx"
-name "Índice"
-literal "true"
+O Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Imagem da Interface Gráfica"
 
 \end_inset
 
+ mostra a janela principal do software e foram listadas grupos de funcionalidade
+s importantes ao usuário.
+\end_layout
 
+\begin_layout Itemize
+explicar o funcionamento do software na prática
+\end_layout
+
+\begin_layout Section
+Item específico X
+\end_layout
+
+\begin_layout Subsection
+Item específico X
 \end_layout
 
 \end_body

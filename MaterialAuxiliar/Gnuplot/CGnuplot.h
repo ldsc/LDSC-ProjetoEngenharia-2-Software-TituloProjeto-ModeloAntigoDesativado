@@ -38,12 +38,15 @@
 // - Veja aula em http://www.lenep.uenf.br/~bueno/DisciplinaSL/  
 //   
 ////////////////////////////////////////////////////////////////////////////////////////
+
 #ifndef CGnuplot_h
 #define CGnuplot_h
-#include <iostream>             // Para teste
+#include <iostream>     // Para teste
+#include <sstream>      // Bueno: uso de ostringstream
 #include <string>
 #include <vector>
-#include <stdexcept>		// Heranca da classe std::runtime_error em GnuplotException
+#include <utility>
+#include <stdexcept>	// Heranca da classe std::runtime_error em GnuplotException
 #include <cstdio>		// Para acesso a arquivos FILE
 
 /**
@@ -116,7 +119,7 @@ private:
   static bool  get_program_path ();	
 
   /// @brief Retorna verdadeiro se a path esta presente.
-  static bool  Path() { get_program_path(); }
+  static bool  Path() { return get_program_path(); }
 
   /// @brief Checa se o arquivo existe.
   static bool  file_exists (const std::string & filename, int mode = 0); 
@@ -140,9 +143,13 @@ public:
   static void set_terminal_std (const std::string & type);
 
   /// @brief Opcional: Seta terminal padrao (standart), usado para visualizacao dos graficos.
-  /// Valores padroes (default): Windows - win, Linux - x11 ou wxt (fedora9), Mac - aqua
+  /// Valores padroes (default): Windows - win, Linux - qt ou x11 ou wxt, Mac - aqua
   static void Terminal (const std::string & type) { set_terminal_std(type); }
 
+  /// @brief Opcional: Obtem terminal padrao (standart), usado para visualizacao dos graficos.
+  /// Valores padroes (default): Windows - win, Linux - x11, Mac - aqua
+  static std::string Terminal () { return Gnuplot::terminal_std; }
+  
  //---------------------------------------------------------------------------------Construtores
   /// @brief Construtor, seta o estilo do grafico na construcao.
   Gnuplot (const std::string & style = "points");
@@ -193,7 +200,7 @@ public:
   Gnuplot &  showonscreen ();		// Janela de saida e setada como default (win/x11/aqua)
 
   /// @brief Mostrar na tela ou escrever no arquivo, seta o tipo de terminal para terminal_std.
-  Gnuplot &  ShowOnScreen ()                      { return showonscreen();  };
+  Gnuplot &  ShowOnScreen ()                      { return showonscreen();  }
 
   /// @brief Salva sessao do gnuplot para um arquivo postscript, nome do arquivo sem extensao 
   Gnuplot &  savetops (const std::string & filename = "gnuplot_output");
@@ -209,8 +216,10 @@ public:
   Gnuplot &  set_style (const std::string & stylestr = "points");
 
   /// @brief  Seta estilos de linhas (em alguns casos sao necessarias informacoes adicionais).
-  /// lines, points, linespoints, impulses, dots, steps, fsteps, histeps,
-  /// boxes, histograms, filledcurves
+  /// lines        dots       steps     errorbars     xerrorbar    xyerrorlines
+  /// points       impulses   fsteps    errorlines    xerrorlines  yerrorbars
+  /// linespoints  labels     histeps   financebars   xyerrorbars  yerrorlines
+  /// surface      vectors    parallelaxes
   Gnuplot &  Style (const std::string & stylestr = "points") 
 						 { return set_style(stylestr); }
 
@@ -229,37 +238,35 @@ public:
   /// csplines, bezier, acsplines (para dados com valor > 0), sbezier, unique, 
   /// frequency (funciona somente com plot_x, plot_xy, plotfile_x, 
   /// plotfile_xy (se a suavizacao esta ativa, set_style nao tem efeito na plotagem dos graficos)
-  Gnuplot &  Smooth(const std::string & stylestr = "csplines") 	
-						{ return set_smooth(stylestr); }
+  Gnuplot &  Smooth(const std::string & stylestr = "csplines") 	{ return set_smooth(stylestr); }
 
-  Gnuplot &  Smooth( int _fsmooth ) 
-                                                { if( fsmooth = _fsmooth )
-						      return set_contour(); 
-						  else 
-						      return unset_contour();
-                                                }
+  Gnuplot &  Smooth( int _fsmooth ) {
+    if( fsmooth == _fsmooth )
+            return set_contour(); 
+		else 
+            return unset_contour();
+  }
   /// @brief  Desativa suavizacao.
-  //Gnuplot &  UnsetSmooth()		        { return unset_smooth (); }
+  //Gnuplot &  UnsetSmooth()	{ return unset_smooth (); }
 
   /// @brief Escala o tamanho do ponto usado na plotagem.
   Gnuplot &  set_pointsize (const double pointsize = 1.0);
 
   /// @brief Escala o tamanho do ponto usado na plotagem.
-  Gnuplot &  PointSize (const double pointsize = 1.0)
-						{ return set_pointsize(pointsize); }
+  Gnuplot &  PointSize (const double pointsize = 1.0) { return set_pointsize(pointsize); }
 
   /// @brief Ativa o grid (padrao = desativado).
   Gnuplot &  set_grid ();
 
   /// @brief Desativa o grid (padrao = desativado).
-  Gnuplot &  unset_grid ();	
+  Gnuplot &  unset_grid ();
 
   /// @brief Ativa/Desativa o grid (padrao = desativado).
-  Gnuplot &  Grid(bool _fgrid = 1) 
-						{ if(fgrid = _fgrid) 
-						    return set_grid(); 
-						  else 
-						    return unset_grid(); }
+  Gnuplot &  Grid(bool _fgrid = 1) { 
+      if(fgrid == _fgrid)
+	    return set_grid(); 
+	  else 
+	    return unset_grid(); }
 
   /// @brief Seta taxa de amostragem das funcoes, ou dos dados de interpolacao.
   Gnuplot &  set_samples (const int samples = 100);
@@ -281,11 +288,11 @@ public:
 
   /// @brief Ativa/Desativa remocao de linhas ocultas na plotagem de superficies (para plotagen 3d).
   Gnuplot &  Hidden3d(bool _fhidden3d = 1) 
-						{ if(fhidden3d = _fhidden3d) 
-						      return set_hidden3d(); 
-						  else 
-						      return unset_hidden3d();
-						}
+                        { if(fhidden3d == _fhidden3d)
+			      return set_hidden3d(); 
+			  else 
+			      return unset_hidden3d();
+			}
 
   /// @brief Ativa desenho do contorno em superficies (para plotagen 3d).
   /// @param base, surface, both.
@@ -296,15 +303,14 @@ public:
 
   /// @brief Ativa/Desativa desenho do contorno em superficies (para plotagen 3d).
   /// @param base, surface, both.
-  Gnuplot &  Contour(const std::string & position = "base") 
-                                                { return set_contour(position); } 
+  Gnuplot &  Contour(const std::string & position = "base") { return set_contour(position); } 
 					
-  Gnuplot &  Contour( int _fcontour ) 
-						{ if( fcontour = _fcontour )
-						      return set_contour(); 
-						  else 
-						      return unset_contour();
-                                                }  
+  Gnuplot &  Contour( int _fcontour ) {
+                          if( fcontour == _fcontour )
+			      return set_contour(); 
+			  else 
+			      return unset_contour();
+            }  
   /// @brief  Ativa a visualizacao da superficie (para plotagen 3d).
   Gnuplot &  set_surface ();		// surface e setado por padrao (default)
 
@@ -312,12 +318,12 @@ public:
   Gnuplot &  unset_surface ();
 
   /// @brief  Ativa/Desativa a visualizacao da superficie (para plotagen 3d).
-  Gnuplot &  Surface( int _fsurface = 1 ) 
-						{ if(fsurface = _fsurface) 
-						      return set_surface(); 
-						  else 
-						      return unset_surface();
-						}
+  Gnuplot &  Surface( int _fsurface = 1 ) {
+                if(fsurface == _fsurface)
+            return set_surface(); 
+		else 
+            return unset_surface();
+		}
   /// @brief Ativa a legenda (a legenda é setada por padrao).
   /// Posicao: inside/outside, left/center/right, top/center/bottom, nobox/box
   Gnuplot &  set_legend (const std::string & position = "default");	
@@ -326,16 +332,15 @@ public:
   Gnuplot &  unset_legend ();
 
   /// @brief Ativa/Desativa a legenda (a legenda é setada por padrao).
-  Gnuplot &  Legend(const std::string & position = "default") 
-                                                { return set_legend(position); }
+  Gnuplot &  Legend(const std::string & position = "default") { return set_legend(position); }
 
   /// @brief Ativa/Desativa a legenda (a legenda é setada por padrao).
-  Gnuplot &  Legend(int _flegend) 
-						{ if(flegend = _flegend) 
-						      return set_legend(); 
-						  else 
-						      return unset_legend();
-						}
+  Gnuplot &  Legend(int _flegend) {
+                if(flegend == _flegend)
+            return set_legend(); 
+		else 
+            return unset_legend();
+		}
 
   /// @brief Ativa o titulo da secao do gnuplot.
   Gnuplot &  set_title (const std::string & title = "");
@@ -344,77 +349,67 @@ public:
   Gnuplot &  unset_title ();		// O title nao e setado por padrao (default)
 
   /// @brief Ativa/Desativa o titulo da secao do gnuplot.
-  Gnuplot &  Title(const std::string & title = "") 
-                                                { 
-						 return set_title(title); 
-						}
-  Gnuplot &  Title(int _ftitle) 
-                                                { 
-						 if(ftitle = _ftitle)  
-						   return set_title();
-						 else
-						   return unset_title(); 
-						}
+  Gnuplot &  Title(const std::string & title = "") { return set_title(title); }
+  Gnuplot &  Title(int _ftitle) { 
+                if(ftitle == _ftitle)
+		   return set_title();
+		else
+		   return unset_title(); 
+		}
     
   /// @brief Seta o rotulo (nome) do eixo y.
   Gnuplot &  set_ylabel (const std::string & label = "y");
 
   /// @brief Seta o rotulo (nome) do eixo y.
-  Gnuplot &  YLabel(const std::string & label = "y")
-						{ return set_ylabel(label); }
+  Gnuplot &  YLabel(const std::string & label = "y"){ return set_ylabel(label); }
 
   /// @brief Seta o rotulo (nome) do eixo x.
   Gnuplot &  set_xlabel (const std::string & label = "x");
 
   /// @brief Seta o rotulo (nome) do eixo x.
-  Gnuplot &  XLabel(const std::string & label = "x")
-						{ return set_xlabel(label); }
+  Gnuplot &  XLabel(const std::string & label = "x"){ return set_xlabel(label); }
 
   /// @brief Seta o rotulo (nome) do eixo z.
   Gnuplot &  set_zlabel (const std::string & label = "z");
 
   /// @brief Seta o rotulo (nome) do eixo z.
-  Gnuplot &  ZLabel(const std::string & label = "z")
-						{ return set_zlabel(label); }
+  Gnuplot &  ZLabel(const std::string & label = "z"){ return set_zlabel(label); }
   
   /// @brief Seta intervalo do eixo x.
   Gnuplot &  set_xrange (const int iFrom, const int iTo);
 
   /// @brief Seta intervalo do eixo x.
-  Gnuplot &  XRange (const int iFrom, const int iTo) 
-						{ return set_xrange(iFrom,iTo); }
+  Gnuplot &  XRange (const int iFrom, const int iTo){ return set_xrange(iFrom,iTo); }
   
   /// @brief Seta intervalo do eixo y.
   Gnuplot &  set_yrange (const int iFrom, const int iTo);
 
   /// @brief Seta intervalo do eixo y.
-  Gnuplot &  YRange (const int iFrom, const int iTo) 
-						{ return set_yrange(iFrom,iTo); }
+  Gnuplot &  YRange (const int iFrom, const int iTo){ return set_yrange(iFrom,iTo); }
 
   /// @brief Seta intervalo do eixo z.
   Gnuplot &  set_zrange (const int iFrom, const int iTo);
 
   /// @brief Seta intervalo do eixo z.
-  Gnuplot &  ZRange (const int iFrom, const int iTo) 
-						{ return set_zrange(iFrom,iTo); }
+  Gnuplot &  ZRange (const int iFrom, const int iTo){ return set_zrange(iFrom,iTo); }
 
   /// @brief Seta escalonamento automatico do eixo x (default).
   Gnuplot &  set_xautoscale ();
 
   /// @brief Seta escalonamento automatico do eixo x (default).
-  Gnuplot &  XAutoscale()			{ return set_xautoscale (); }
+  Gnuplot &  XAutoscale()	{ return set_xautoscale (); }
 
   /// @brief Seta escalonamento automatico do eixo y (default).
   Gnuplot &  set_yautoscale ();
 
   /// @brief Seta escalonamento automatico do eixo y (default).
-  Gnuplot &  YAutoscale()			{ return set_yautoscale (); }
+  Gnuplot &  YAutoscale()	{ return set_yautoscale (); }
 
   /// @brief Seta escalonamento automatico do eixo z (default).
   Gnuplot &  set_zautoscale ();
 
   /// @brief Seta escalonamento automatico do eixo z (default).
-  Gnuplot &  ZAutoscale()			{ return set_zautoscale (); }
+  Gnuplot &  ZAutoscale()	{ return set_zautoscale (); }
 
   /// @brief Ativa escala logaritma do eixo x (logscale nao e setado por default).
   Gnuplot &  set_xlogscale (const double base = 10);
@@ -424,18 +419,18 @@ public:
 
   /// @brief Ativa escala logaritma do eixo x (logscale nao e setado por default).
   Gnuplot &  XLogscale (const double base = 10)	{ //if(base)
-						    return set_xlogscale (base);
-						    //else
-                                                    //return unset_xlogscale ();
-                                                }
+			    return set_xlogscale (base);
+			    //else
+               //return unset_xlogscale ();
+    }
 
   /// @brief Ativa/Desativa escala logaritma do eixo x (logscale nao e setado por default).
-  Gnuplot &  XLogscale(bool _fxlogscale) 
-  					        { if(fxlogscale = _fxlogscale) 
-  					            return set_xlogscale(); 
-  					          else 
-  					            return unset_xlogscale();
-  					        }
+  Gnuplot &  XLogscale(bool _fxlogscale) {
+        if(fxlogscale == _fxlogscale)
+            return set_xlogscale(); 
+        else 
+            return unset_xlogscale();
+        }
 
   /// @brief Ativa escala logaritma do eixo y (logscale nao e setado por default).
   Gnuplot &  set_ylogscale (const double base = 10);
@@ -447,12 +442,12 @@ public:
   Gnuplot &  unset_ylogscale ();
 
   /// @brief Ativa/Desativa escala logaritma do eixo y (logscale nao e setado por default).
-  Gnuplot &  YLogscale(bool _fylogscale) 
-						{ if(fylogscale = _fylogscale) 
-						      return set_ylogscale(); 
-						  else 
-						      return unset_ylogscale();
-						}
+  Gnuplot &  YLogscale(bool _fylogscale) {
+                if(fylogscale == _fylogscale)
+            return set_ylogscale(); 
+		else 
+            return unset_ylogscale();
+		}
 
   /// @brief Ativa escala logaritma do eixo y (logscale nao e setado por default).
   Gnuplot &  set_zlogscale (const double base = 10);
@@ -464,20 +459,18 @@ public:
   Gnuplot &  unset_zlogscale ();
 
   /// @brief Ativa/Desativa escala logaritma do eixo y (logscale nao e setado por default).
-  Gnuplot &  ZLogscale(bool _fzlogscale) 
-						{ if(fzlogscale = _fzlogscale) 
-						      return set_zlogscale(); 
-						  else 
-						      return unset_zlogscale();
-						}
-
+  Gnuplot &  ZLogscale(bool _fzlogscale) {
+                if(fzlogscale == _fzlogscale)
+            return set_zlogscale(); 
+		else 
+            return unset_zlogscale();
+		}
   
   /// @brief Seta intervalo da palette (autoscale por padrao).
   Gnuplot &  set_cbrange (const int iFrom, const int iTo);
 
   /// @brief Seta intervalo da palette (autoscale por padrao).
-  Gnuplot &  CBRange(const int iFrom, const int iTo)
-						{ return set_cbrange(iFrom, iTo); }
+  Gnuplot &  CBRange(const int iFrom, const int iTo) { return set_cbrange(iFrom, iTo); }
 
   //----------------------------------------------------------------------------------
   /// @brief Plota dados de um arquivo de disco.
@@ -502,11 +495,8 @@ public:
 	       const int column_y = 2, const std::string & title = "");
   /// @brief Plota pares x,y a partir de um arquivo de disco.
   Gnuplot &  PlotFile (const std::string & filename,
-	       const int column_x = 1,
-	       const int column_y = 2, const std::string & title = "")
-						{ 
-						return plotfile_xy(filename, column_x, column_y, title );
-						} 
+	       const int column_x = 1,const int column_y = 2, const std::string & title = "") { 
+						return plotfile_xy(filename, column_x, column_y, title );} 
 
   /// @brief Plota pares x,y a partir de vetores.
   Gnuplot &  plot_xy (const std::vector < double >&x,
@@ -555,7 +545,7 @@ public:
 		const int column_y = 2,
 		const int column_z = 3, const std::string & title = "")
 						    { return plotfile_xyz(filename, column_x,
-						      column_y,column_z); }
+						      column_y,column_z,title); }
 
   /// @brief  Plota valores de x,y,z a partir de vetores.
   Gnuplot &  plot_xyz (const std::vector < double >&x,
@@ -629,6 +619,105 @@ public:
 			const int iWidth, const int iHeight, const std::string & title = "")
                                               { return plot_image (ucPicBuf, iWidth, iHeight, title); }
 
+  ////////////////////////////////// Novidades Bueno ////////////////////////////////////////
+  /// Seta uma mensagem numa determinada posição (requer a chamada a Replot())
+  //set label "Yield Point" at 0.003,260
+  Gnuplot & SetLabel( double x, double y, std::string label) {
+      label = "set label \"" + label + "\" at " + std::to_string(x) + "," + std::to_string(y) + "\n";
+      *this << label;
+      return *this;      
+  }
+  /// Seta uma mensagem numa determinada posição e já chama Replot()
+  Gnuplot & PlotLabel( double x, double y,std::string label) {
+      label = "set label \"" + label + "\" at " + std::to_string(x) + "," + std::to_string(y) + "\n";
+      //std::cerr << label;
+      *this << label;
+      return replot();      
+  }
+  // Para plotar um ponto; https://groups.google.com/forum/#!topic/comp.graphics.apps.gnuplot/b5pPbP9PgEc
+  //We use the possibility to tell Gnuplot with the '-' input to read from standard input. 
+  //plot '-' w p ls 1  
+  // entra com pares de dados
+  // a letra "e" encerra a entrada de dados.
+  // w=with p = points ls = linestyle
+  /// Seta um ponto numa determinada posição (requer a chamada a Replot())
+  Gnuplot & SetPoint(double x, double y) {
+      //*this << "plot '-' w p ls 1, \n" << std::to_string(x) << " " <<  std::to_string(y) << "\ne\n";
+      SetLabel( x,y,"*");
+      return *this;      
+  }
+  /// Plota um ponto numa determinada posição e já chama Replot()
+  Gnuplot & PlotPoint(double x, double y/*, std::string styleInformation = ""*/) {
+      return PlotLabel( x,y,"*");
+  }
+  
+  // Para definir o estilo de uma seta (veja http://gnuplot.sourceforge.net/demo_4.7/arrowstyle.html)
+  //  set style arrow 1 head  filled    size screen 0.025,30,45 ls 1
+  //  set style arrow 2 head  nofilled  size screen 0.03,15 ls 2
+  //  set style arrow 5 heads filled    size screen 0.03,15,135 ls 1
+  //  set style arrow 6 head  empty     size screen 0.03,15,135 ls 2
+  //  set style arrow 7 nohead ls 1
+  // Para plotar uma seta, note que usar o estilo 1 definido acima
+  //  set arrow from -500,-100 to 500,-100 as 1
+  /// Seta uma seta numa determinada posição
+  Gnuplot & SetArrow(double x1, double y1,double x2, double y2, int style_arrow = 1) {
+      std::ostringstream os; 
+      os << "set arrow from " << x1 << " , " << y1 << " to " << x2 << " , " << y2 << " as " << style_arrow << "\n";
+      *this << os.str();
+      return *this;      
+  }
+  /// Seta uma seta numa determinada posição e já chama Replot()
+  Gnuplot & PlotArrow(double x1, double y1,double x2, double y2, int style_arrow = 1) {
+      std::ostringstream os; 
+      os << "set arrow from " << x1 << " , " << y1 << " to " << x2 << " , " << y2 << " as " << style_arrow << "\n";
+      *this << os.str();
+      return replot();
+  }
+  /// Plota um quadrado
+  //set style line 1 lc rgb 'black' pt 5   # square  
+  Gnuplot & Square(double x1, double y1,int size = 4 ) {
+      std::ostringstream os; 
+      os << "set style line 1 lc rgb 'black' pt " << size << "\n";
+      os << "plot \"<echo '"<< x1 << " " << y1 << "'\" with points ls 1" << "\n";
+      *this << os.str();
+      return replot();
+  }
+
+  /// Plota um Circulo
+  //  set style line 2 lc rgb 'black' pt 7   # circle
+  Gnuplot & Circle(double x1, double y1,int size = 4 ) {
+      std::ostringstream os; 
+      os << "set style line 1 lc rgb 'black' pt " << size << "\n";
+      os << "plot \"<echo '"<< x1 << " " << y1 << "'\" with points ls 2" << "\n"; //"<echo '3 1.5'"
+      *this << os.str();
+      return replot();
+  }
+  /// Plota um Triângulo
+  // set style line 3 lc rgb 'black' pt 9   # triangle
+  Gnuplot & Triangle(double x1, double y1,int size = 4 ) {
+      std::ostringstream os; 
+      os << "set style line 1 lc rgb 'black' pt " << size << "\n";
+      os << "plot \"<echo '"<< x1 << " " << y1 << "'\" with points ls 3" << "\n";
+      *this << os.str();
+      return replot();
+  }
+  /// Exporta gráfico no formato de uma imagem (FALTA TESTAR!).
+  // Abaixo os formatos suportados: 
+  //   png jpeg pngcairo postscript  qt svg x11
+  //   cairolatex canvas cgm context corel domterm dumb dxf eepic emf emtex epscairo
+  //   epslatex fig gif hpgl latex lua  mf mp pcl5 pdfcairo pop pslatex pstex  pstricks  push  qms
+  //   tek40xx  tek410x texdraw tgif tikz tkcanvas tpic vttek xlib xterm
+  Gnuplot & ImageExport(std::string fileName, std::string type = "postscript solid") {
+      std::string terminalPadrao = terminal_std;// captura o tipo de terminal.
+      *this << std::string("set term ") + type + "\n";     // muda o terminal.
+      *this << std::string("set out \"")  + fileName + "." + type << "\"\n"; // define nome do arquivo.
+      replot();                     
+      set_terminal_std(terminalPadrao);
+      return *this;
+  }
+  
+  ////////////////////////////////// Fim Novidades Bueno ////////////////////////////////////////
+
   //----------------------------------------------------------------------------------
   // Repete o ultimo comando de plotagem, seja plot (2D) ou splot (3D)
   // Usado para visualizar plotagens, após mudar algumas opcoes de plotagem
@@ -646,7 +735,7 @@ public:
   // Reseta uma sessao do gnuplot (próxima plotagem apaga definicoes previas)
   Gnuplot &  ResetPlot() 			{ return reset_plot(); }
   // Reseta uma sessao do gnuplot (próxima plotagem apaga definicoes previas)
-  Gnuplot &  Reset()        			{ return reset_plot(); }
+  Gnuplot &  Reset()        		{ return reset_plot(); }
 
   // Reseta uma sessao do gnuplot e seta todas as variaveis para o default
   Gnuplot &  reset_all ();
@@ -659,8 +748,10 @@ public:
 
   // Verifica se a sessao esta valida
   bool  IsValid ()				{ return is_valid (); };
-
+  // 
+  /// Sobrecarga do operador de inserção << ; uso: vector<double> vx,vy; grafico << make_pair(vx,vy);
+//   friend Gnuplot & operator<<(Gnuplot& grafico, std::pair< std::vector<double>,std::vector<double> > p) {
+//             grafico.PlotVector(p.first,p.second); return grafico; }
 };
 typedef Gnuplot CGnuplot;
 #endif
-

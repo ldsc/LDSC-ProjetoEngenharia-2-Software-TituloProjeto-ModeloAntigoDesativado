@@ -54,9 +54,13 @@
 ///////////////////////////////////////////////////////////
 //
 // Modificacoes:
-// Traducao para o portugues
-// Adicao de novos nomes para os metodos(funcoes)
-// Uso de documentacao no formato javadoc/doxygen
+// Traducao para o portugues.
+// Adicao de novos nomes para os metodos(funcoes).
+// Uso de documentacao no formato javadoc/doxygen.
+// Correções de erros:
+// em comparações if( x = y) -> if( x == y).
+// no uso de exceções.
+// Melhoria desempenho com uso do diretório /dev/shm (shared memory) para arquivos temporários no linux antes usava /tmp.
 // Bueno A.D.
 // e-mail: bueno@lenep.uenf.br
 // 20/07/08
@@ -138,7 +142,7 @@ bool Gnuplot::set_GNUPlotPath(const std::string &path)
 void Gnuplot::set_terminal_std(const std::string &type)
 {
 #if defined(unix) || defined(__unix) || defined(__unix__) || defined(__APPLE__)
-    if (type.find("x11") != std::string::npos && getenv("DISPLAY") == NULL)
+    if (type.find("x11") != std::string::npos && getenv("DISPLAY") == nullptr)
     {
         throw GnuplotException("Can't find DISPLAY variable");
     }
@@ -272,7 +276,8 @@ Gnuplot::~Gnuplot()
 #elif defined(unix) || defined(__unix) || defined(__unix__) || defined(__APPLE__)
     if (pclose(this->gnucmd) == -1)
 #endif
-        throw GnuplotException("Problem closing communication to gnuplot");
+        //throw GnuplotException("Problem closing communication to gnuplot");
+        std::cerr << "\nProblem closing communication to gnuplot\n";
 }
 
 //----------------------------------------------------------------------------------
@@ -869,7 +874,6 @@ Gnuplot& Gnuplot::plotfile_x(const std::string &filename,
         else
             except << "No read permission for File \"" << filename << "\"";
         throw GnuplotException( except.str() );
-        return *this;
     }
 
     std::ostringstream cmdstr;
@@ -906,7 +910,6 @@ Gnuplot& Gnuplot::plot_x(const std::vector<double> &x,
     if (x.size() == 0)
     {
         throw GnuplotException("std::vector too small");
-        return *this;
     }
 
     std::ofstream tmp;
@@ -942,7 +945,6 @@ Gnuplot& Gnuplot::plotfile_xy(const std::string &filename,
         else
             except << "No read permission for File \"" << filename << "\"";
         throw GnuplotException( except.str() );
-        return *this;
     }
 
     std::ostringstream cmdstr;
@@ -980,13 +982,11 @@ Gnuplot& Gnuplot::plot_xy(const std::vector<double> &x,
     if (x.size() == 0 || y.size() == 0)
     {
         throw GnuplotException("std::vectors too small");
-        return *this;
     }
 
     if (x.size() != y.size())
     {
         throw GnuplotException("Length of the std::vectors differs");
-        return *this;
     }
 
     std::ofstream tmp;
@@ -1023,7 +1023,6 @@ Gnuplot& Gnuplot::plotfile_xy_err(const std::string &filename,
         else
             except << "No read permission for File \"" << filename << "\"";
         throw GnuplotException( except.str() );
-        return *this;
     }
 
     std::ostringstream cmdstr;
@@ -1060,13 +1059,11 @@ Gnuplot& Gnuplot::plot_xy_err(const std::vector<double> &x,
     if (x.size() == 0 || y.size() == 0 || dy.size() == 0)
     {
         throw GnuplotException("std::vectors too small");
-        return *this;
     }
 
     if (x.size() != y.size() || y.size() != dy.size())
     {
         throw GnuplotException("Length of the std::vectors differs");
-        return *this;
     }
 
     std::ofstream tmp;
@@ -1105,7 +1102,6 @@ Gnuplot& Gnuplot::plotfile_xyz(const std::string &filename,
         else
             except << "No read permission for File \"" << filename << "\"";
         throw GnuplotException( except.str() );
-        return *this;
     }
 
     std::ostringstream cmdstr;
@@ -1139,13 +1135,11 @@ Gnuplot& Gnuplot::plot_xyz(const std::vector<double> &x,
     if (x.size() == 0 || y.size() == 0 || z.size() == 0)
     {
         throw GnuplotException("std::vectors too small");
-        return *this;
     }
 
     if (x.size() != y.size() || x.size() != z.size())
     {
         throw GnuplotException("Length of the std::vectors differs");
-        return *this;
     }
 
 
@@ -1273,7 +1267,7 @@ void Gnuplot::init()
     // name is specified as argument.
     // If the requested variable is not part of the environment list, the function returns a NULL pointer.
 #if ( defined(unix) || defined(__unix) || defined(__unix__) ) && !defined(__APPLE__)
-    if (getenv("DISPLAY") == NULL)
+    if (getenv("DISPLAY") == nullptr)
     {
         this->valid = false;
         throw GnuplotException("Can't find DISPLAY variable");
@@ -1339,10 +1333,9 @@ bool Gnuplot::get_program_path()
     // Retrieves a C string containing the value of the environment variable PATH
     path = getenv("PATH");
 
-    if (path == NULL)
+    if (path == nullptr)
     {
         throw GnuplotException("Path is not set");
-        return false;
     }
     else
     {
@@ -1383,7 +1376,6 @@ bool Gnuplot::file_exists(const std::string &filename, int mode)
     if ( mode < 0 || mode > 7)
     {
         throw std::runtime_error("In function \"Gnuplot::file_exists\": mode has to be an integer between 0 and 7");
-        return false;
     }
 
     // int _access(const char *path, int mode);
@@ -1409,7 +1401,13 @@ bool Gnuplot::file_exists(const std::string &filename, int mode)
     }
 
 }
-
+// Dica/Alteração:
+// No GNU/Linux o programa criava arquivos dentro da pasta tmp "/tmp/gnuplotiXXXXXX" do disco rigido.
+// Mudei para "/dev/shm/gnuplotiXXXXXX". Ou seja, passa a usar o disco virtual criado na memória ram do Linux.
+// Veja https://www.techrepublic.com/article/how-to-use-a-ramdisk-on-linux/
+// sudo mkdir -p /media/ramdisk
+// sudo mount -t tmpfs -o size=2048M tmpfs /media/ramdisk
+// A pasta "/dev/shm/" faz parte do GNU/Linux
 //----------------------------------------------------------------------------------
 // Opens a temporary file
 std::string Gnuplot::create_tmpfile(std::ofstream &tmp)
@@ -1417,7 +1415,9 @@ std::string Gnuplot::create_tmpfile(std::ofstream &tmp)
 #if defined(WIN32) || defined(_WIN32) || defined(__WIN32__) || defined(__TOS_WIN__)
     char name[] = "gnuplotiXXXXXX"; //tmp file in working directory
 #elif defined(unix) || defined(__unix) || defined(__unix__) || defined(__APPLE__)
-    char name[] = "/tmp/gnuplotiXXXXXX"; // tmp file in /tmp
+  //char name[] = "/tmp/gnuplotiXXXXXX"; // tmp file in /tmp
+  char name[] = "/dev/shm/gnuplotiXXXXXX"; // tmp file in /tmp
+
 #endif
 
     // check if maximum number of temporary files reached
@@ -1428,7 +1428,6 @@ std::string Gnuplot::create_tmpfile(std::ofstream &tmp)
                << "): cannot open more files" << std::endl;
 
         throw GnuplotException( except.str() );
-        return "";
     }
 
     // int mkstemp(char *name);
@@ -1442,7 +1441,7 @@ std::string Gnuplot::create_tmpfile(std::ofstream &tmp)
 
     // open temporary files for output
 #if defined(WIN32) || defined(_WIN32) || defined(__WIN32__) || defined(__TOS_WIN__)
-    if (_mktemp(name) == NULL)
+    if (_mktemp(name) == NULL) //verificar se usa nullptr
 #elif defined(unix) || defined(__unix) || defined(__unix__) || defined(__APPLE__)
     if (mkstemp(name) == -1)
 #endif
@@ -1450,7 +1449,6 @@ std::string Gnuplot::create_tmpfile(std::ofstream &tmp)
         std::ostringstream except;
         except << "Cannot create temporary file \"" << name << "\"";
         throw GnuplotException(except.str());
-        return "";
     }
 
     tmp.open(name);
@@ -1459,7 +1457,6 @@ std::string Gnuplot::create_tmpfile(std::ofstream &tmp)
         std::ostringstream except;
         except << "Cannot create temporary file \"" << name << "\"";
         throw GnuplotException(except.str());
-        return "";
     }
 
     // Save the temporary filename

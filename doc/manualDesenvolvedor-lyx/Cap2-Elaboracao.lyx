@@ -185,13 +185,12 @@ name "subsec:Análise-de-domínio"
 
 \end_inset
 
-
+?
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Esta parte deve ser apagada na versão final; serve apenas como lembrete
- dos itens que vocês precisam considerar
+Apague esta seção
 \end_layout
 
 \end_inset
@@ -523,6 +522,18 @@ Diagrama de pacotes (assuntos)
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:diagrama de assuntos-pacotes"
+
+\end_inset
+
+
+\emph default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Apague esta seção!
+\end_layout
 
 \end_inset
 

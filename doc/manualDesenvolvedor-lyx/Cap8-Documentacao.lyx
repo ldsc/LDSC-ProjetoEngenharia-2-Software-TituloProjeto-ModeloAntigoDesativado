@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass extbook
 \begin_preamble
 \usepackage {graphicx}
@@ -24,22 +26,24 @@
 \usepackage{listings}
 \end_preamble
 \use_default_options false
-\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\master /home2/andreduartebueno/workdir/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica/doc/manualDesenvolvedor-lyx/DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
 \maintain_unincluded_children false
 \language brazilian
 \language_package auto
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -70,6 +74,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -84,7 +89,10 @@
 \tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
@@ -133,47 +141,14 @@ Documentação do usuário
 \end_layout
 
 \begin_layout Standard
-Descreve-se aqui o manual do usuário, um guia que explica, passo a passo
- a forma de instalação e uso do software desenvolvido.
-\end_layout
-
-\begin_layout Subsection
-Como instalar o software
-\end_layout
-
-\begin_layout Standard
-Para instalar o software execute o seguinte passo a passo:
-\end_layout
-
-\begin_layout Itemize
-blablabla
-\end_layout
-
-\begin_layout Itemize
-..
-\end_layout
-
-\begin_layout Itemize
-.
-\end_layout
-
-\begin_layout Subsection
-Como rodar o software
-\end_layout
-
-\begin_layout Standard
-Para rodar o software ....blablabla
-\end_layout
-
-\begin_layout Standard
-Veja no Capítulo 
+O manual do usuário é apresentado no Capítulo 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "chap:Teste"
+reference "chap:Manual-do-Usuário"
 
 \end_inset
 
- - Teste, exemplos de uso do software.
+ - Manual do Usuário.
 \end_layout
 
 \begin_layout Section
@@ -199,6 +174,7 @@ Instalar o compilador g++ da GNU disponível em
 LatexCommand href
 name "http://gcc.gnu.org"
 target "http://gcc.gnu.org"
+literal "false"
 
 \end_inset
 
@@ -224,6 +200,7 @@ gnuplot
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.gnuplot.info/"
+literal "false"
 
 \end_inset
 
@@ -285,6 +262,10 @@ doxygen
 
 \begin_layout Itemize
 Veja informações sobre uso do formato JAVADOC em:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -292,6 +273,7 @@ Veja informações sobre uso do formato JAVADOC em:
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html"
+literal "false"
 
 \end_inset
 
@@ -305,6 +287,10 @@ Veja informações sobre o software
 doxygen
 \family default
  em
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -312,6 +298,7 @@ doxygen
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.stack.nl/~dimitri/doxygen/"
+literal "false"
 
 \end_inset
 
@@ -347,6 +334,10 @@ Abra um terminal.
 
 \begin_layout Itemize
 Vá para o diretório onde esta o código.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -381,6 +372,10 @@ xywizard.
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -397,6 +392,10 @@ Peça para o
 doxygen
 \family default
  gerar a documentação.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -409,6 +408,10 @@ doxygen
 \end_deeper
 \begin_layout Itemize
 Verifique a documentação gerada abrindo o arquivo html/index.html.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
