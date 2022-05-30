@@ -943,5 +943,878 @@ MACAÉ - RJ
 Janeiro - 2023
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Página de rosto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+TÍTULO
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+NOME COMPLETO DO AUTOR(A)
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "50text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align block
+Projeto de Engenharia de Petróleo apresentado ao Centro de Ciências e Tecnologia
+ da Universidade Estadual do Norte Fluminense, como parte das exigências
+ para obtenção do título de Engenheiro de Exploração e Produção de Petróleo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Orientador: Prof.
+ André Duarte Bueno, D.Sc.
+\begin_inset Newline newline
+\end_inset
+
+Co-Orientador: Prof Guilherme
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+, D.Sc.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+MACAÉ - RJ
+\begin_inset Newline newline
+\end_inset
+
+Janeiro - 2023
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../ModeloDiretorio-Aluno-Bolsista-TCC-IC-MSC-DSC-Projeto/imagens/logomarcas/logoANP_h_fundobranco_cor.jpg
+	width 25text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../ModeloDiretorio-Aluno-Bolsista-TCC-IC-MSC-DSC-Projeto/imagens/logomarcas/logo_finep_novo.jpg
+	width 25text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../ModeloDiretorio-Aluno-Bolsista-TCC-IC-MSC-DSC-Projeto/imagens/logomarcas/logo-mct.jpg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Página de aprovação
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\backslash
+pagenumbering{roman}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+TÍTULO
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+NOME COMPLETO DO AUTOR(A)
+\size default
+
+\begin_inset VSpace 2.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "50text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align block
+Projeto de Engenharia de Petróleo apresentado ao Centro de Ciências e Tecnologia
+ da Universidade Estadual do Norte Fluminense, como parte das exigências
+ para obtenção do título de Engenheiro de Exploração e Produção de Petróleo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+Aprovada em X de XX de 2023.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Comissão Examinadora:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100line%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-1.25
+\backslash
+baselineskip}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\align left
+Prof.
+ André Duarte Bueno (D.Sc) - LENEP/UENF
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100line%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-1.25
+\backslash
+baselineskip}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\align left
+Prof.
+ Guilherme Rodrigues Lima (D.Sc) - UFES
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100line%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-1.25
+\backslash
+baselineskip}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\align left
+Prof.
+ Fernando Diogo Siqueira (D.Sc) - LENEP/UENF
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100line%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-1.25
+\backslash
+baselineskip}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\align left
+Prof.
+ José Ricardo (D.Sc) - LAMET/UENF
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100line%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-1.25
+\backslash
+baselineskip}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\align left
+Prof.
+ Nivaldo Ferreira (D.Sc) - LAMET/UENF
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{Dedicatória}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 21.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+coloque aqui a dedicação
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+dedicação
+\end_layout
+
+\end_inset
+
+ do projeto.
+\end_layout
+
+\begin_layout Standard
+\align right
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+
+\size large
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{Agradecimentos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\align left
+Ao ...
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Agradecimentos
+\end_layout
+
+\end_inset
+
+Agradecimentos
+\end_layout
+
+\begin_layout Standard
+Aos pais...
+\end_layout
+
+\begin_layout Standard
+Aos amigos ....
+\end_layout
+
+\begin_layout Standard
+Aos membros da banca, professores ...
+\end_layout
+
+\begin_layout Standard
+Aos professores e funcionários do LENEP/CCT/UENF....
+\end_layout
+
+\begin_layout Standard
+Ao CENPES/PETROBRAS pelo fornecimento de material....
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\paragraph_spacing onehalf
+\align left
+Reconhecer que teve ajuda e apoio é uma característica importante para todo
+ profissional e pesquisador.
+ 
+\end_layout
+
+\begin_layout Itemize
+\align left
+Lembre-se dos amigos, dos professores, dos funcionários, dos colaboradores.
+ Lembre-se de quem emprestou/cedeu material, dados, informações, amostras.
+ 
+\end_layout
+
+\begin_layout Itemize
+\align left
+Lembre-se de quem lhe ajudou nos algoritmos/programas;
+\end_layout
+
+\begin_layout Itemize
+\align left
+Lembre-se de quem lhe ajudou na preparação e realização de experimentos
+ de laboratório.
+ 
+\end_layout
+
+\begin_layout Itemize
+Não economize, seja generoso nos agradecimentos.
+\end_layout
+
+\begin_layout Itemize
+Cada agradecimento deve ser curto e objetivo.
+ 
+\end_layout
+
+\begin_layout Itemize
+Troque o genérico "aos amigos" pelo nome completo dos seus amigos e nome
+ completo das pessoas que colaboraram com seu trabalho.
+ Os nomes das pessoas devem ser completos (não ambíguos).
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\paragraph_spacing double
+(obrigatório para bolsistas prh20-anp/ctpetro) -
+\end_layout
+
+\end_inset
+
+Ao comitê gestor do PRH20-ANP-CTPETRO/LENEP/CCT/UENF, a Agência Nacional
+ do Petróleo, Gás Natural e Biocombustíveis – ANP, a Financiadora de Estudos
+ e Projetos – FINEP e ao Ministério da Ciência e Tecnologia – MCT pelo fornecime
+nto de bolsa de estudos e taxa de bancada por meio do Programa de Recursos
+ Humanos da ANP para o Setor Petróleo e Gás – PRH-ANP/MCT.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(obrigatório para bolsistas prh20-anp/petrobras) -
+\end_layout
+
+\end_inset
+
+Ao comitê gestor do PRH20-ANP-PETROBRAS/LENEP/CCT/UENF, e a Universidade
+ Petrobras pelo fornecimento de bolsa de estudos e taxa de bancada por meio
+ do PFRH-PETROBRAS, Programa de Formação de Recursos Humanos da Petrobras.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{Epígrafe}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 22cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\emph on
+[Opcional e a escolha do autor(a) Ex: ]
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\emph on
+"XXXXXXX"
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

@@ -171,6 +171,17 @@ LatexCommand tableofcontents
 \align block
 \begin_inset CommandInset include
 LatexCommand include
+filename "Cap-ResumoAbstract.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset CommandInset include
+LatexCommand include
 filename "Cap0-Introducao-Escopo-Objetivos-Metodologia.lyx"
 
 \end_inset
