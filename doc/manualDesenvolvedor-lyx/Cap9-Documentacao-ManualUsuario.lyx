@@ -154,6 +154,14 @@ Instalação
 \end_layout
 
 \begin_layout Standard
+A seguir instruções para instalação do software.
+\end_layout
+
+\begin_layout Subsection
+Baixando o software
+\end_layout
+
+\begin_layout Standard
 O software foi disponibilizado no site 
 \begin_inset CommandInset href
 LatexCommand href
@@ -167,6 +175,20 @@ literal "false"
 
 \begin_layout Standard
 Lá você encontra instruções atualizadas para baixar e instalar.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+coloque as instruções:
+\end_layout
+
+\begin_layout Plain Layout
+git clone https://github.com/ldsc/nomeProjetoEspecifico
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -342,15 +364,49 @@ s importantes ao usuário.
 \end_layout
 
 \begin_layout Itemize
-explicar o funcionamento do software na prática
+explicar o funcionamento do software na prática...explicando o uso de cada
+ uma das features/funcionalidades.
+\end_layout
+
+\begin_layout Itemize
+aqui você dá um apanhado geral...
+\end_layout
+
+\begin_layout Itemize
+Depois vai criar seções para funcionalidades específicas, detalhando seu
+ uso...
 \end_layout
 
 \begin_layout Section
-Item específico X
+Funcionalidade específica A
 \end_layout
 
 \begin_layout Subsection
-Item específico X
+Item específico A1
+\end_layout
+
+\begin_layout Subsection
+Item específico A2
+\end_layout
+
+\begin_layout Subsection
+Item específico An
+\end_layout
+
+\begin_layout Section
+Funcionalidade específica B
+\end_layout
+
+\begin_layout Subsection
+Item específico B1
+\end_layout
+
+\begin_layout Subsection
+Item específico B2
+\end_layout
+
+\begin_layout Subsection
+Item específico Bn
 \end_layout
 
 \end_body

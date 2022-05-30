@@ -214,7 +214,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/fig-3-9-Diagrama-de-classes-heranca.png
+	filename imagens/DiagramaClasses.png
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -375,8 +376,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/fig-3-12-Diagrama-de-eventos-sequencia-prova.png
-	lyxscale 85
+	filename imagens/DiagramaSequencia-Eventos.png
+	lyxscale 40
 	width 100text%
 
 \end_inset
@@ -520,8 +521,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagComunicacao-CalculoAreaFuncao.png
-	lyxscale 85
+	filename imagens/DiagramaComunicacao.png
 	width 100text%
 
 \end_inset
@@ -628,8 +628,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/fig-3-14-Diagrama-de-estados-aluno.png
-	lyxscale 85
+	filename imagens/DiagramaEstados.png
+	lyxscale 30
 	width 100text%
 
 \end_inset
@@ -712,8 +712,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagAtividade-MetodoArea.png
-	lyxscale 85
+	filename imagens/DiagramaAtividade.png
+	lyxscale 40
 	width 100text%
 
 \end_inset

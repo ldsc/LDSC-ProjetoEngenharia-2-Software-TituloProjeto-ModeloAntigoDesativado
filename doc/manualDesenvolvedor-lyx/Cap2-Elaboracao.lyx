@@ -168,7 +168,7 @@ Eliminam-se os requisitos "impossíveis" e ajusta-se a idéia do sistema de
 \end_layout
 
 \begin_layout Section
-O que é a análise de domínio
+#O que é a análise de domínio
 \begin_inset Index idx
 status collapsed
 
@@ -280,6 +280,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/AnaliseDeDominio.png
+	lyxscale 50
 	width 100text%
 
 \end_inset
@@ -382,7 +383,7 @@ o sobre o assunto...
 \end_layout
 
 \begin_layout Section
-O que é identificação de pacotes
+#O que é identificação de pacotes
 \begin_inset Index idx
 status collapsed
 
@@ -472,7 +473,7 @@ Nome Pacote: Descrição.
 \end_layout
 
 \begin_layout Section
-O que é o diagrama de pacotes
+#O que é o diagrama de pacotes
 \emph on
 
 \begin_inset Index idx
@@ -592,6 +593,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/AnaliseDeDominio.png
+	lyxscale 50
 	width 100text%
 
 \end_inset

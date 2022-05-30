@@ -1306,8 +1306,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/fig-3-16-Diagrama-de-componentes.png
-	lyxscale 90
+	filename imagens/DiagramaComponentes.png
+	lyxscale 25
 	width 100text%
 
 \end_inset
@@ -1409,8 +1409,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/fig-3-17-diagrama-execucao.png
-	lyxscale 90
+	filename imagens/DiagramExecucao.png
+	lyxscale 30
 	width 100text%
 
 \end_inset

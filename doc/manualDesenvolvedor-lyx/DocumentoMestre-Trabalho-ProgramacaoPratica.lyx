@@ -119,6 +119,20 @@
 
 \begin_layout Standard
 \align block
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+1- Copiar todos os arquivos da versão agil para cá, incluindo imagens
+\end_layout
+
+\begin_layout Plain Layout
+2- Substituir imagens por versões mais atuais do livro
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset include
 LatexCommand include
 filename "Cap0-Capa.lyx"

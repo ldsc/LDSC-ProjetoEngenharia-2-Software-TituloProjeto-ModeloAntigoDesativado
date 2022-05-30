@@ -146,7 +146,7 @@ o do sistema a ser modelado e desenvolvido.
 \end_layout
 
 \begin_layout Section
-O que é especificação?
+#O que é especificação?
 \begin_inset Note Note
 status open
 
@@ -784,7 +784,7 @@ Mac
 \end_layout
 
 \begin_layout Section
-O que são os casos de uso
+#O que são os casos de uso
 \begin_inset Index idx
 status collapsed
 
@@ -1107,7 +1107,7 @@ do software
 \end_layout
 
 \begin_layout Subsection
-O que são os diagramas de casos de uso
+#O que são os diagramas de casos de uso
 \begin_inset Index idx
 status collapsed
 
@@ -1196,7 +1196,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagCasoDeUso-AnaliseDosResultados.png
+	filename imagens/DiagramaCasoUso-Geral.png
+	lyxscale 30
 	width 100text%
 
 \end_inset
@@ -1291,7 +1292,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagCasoDeUso-AnaliseDosResultados.png
+	filename imagens/DiagramaCasoDeUso-AnaliseDosResultados.png
 	width 100text%
 
 \end_inset
