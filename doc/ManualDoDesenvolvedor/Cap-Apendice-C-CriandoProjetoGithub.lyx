@@ -358,8 +358,11 @@ Precisa comitar os arquivos, ou seja, enviar para o repositório local:
 
 \begin_deeper
 \begin_layout LyX-Code
-git commit -m "Adicionados arquivos do modelo no ProjetoEngenharia-Titulo-SeuNom
-e"
+git commit -m 
+\end_layout
+
+\begin_layout LyX-Code
+"Adicionados arquivos do modelo no ProjetoEngenharia-Titulo-SeuNome"
 \end_layout
 
 \end_deeper
@@ -469,8 +472,11 @@ cd workdir
 \end_layout
 
 \begin_layout LyX-Code
-git clone https://github.com/ldsc/ModeloDocumento-ProjetoEngenharia-ProgramacaoPr
-atica
+git clone 
+\end_layout
+
+\begin_layout LyX-Code
+https://github.com/ldsc/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica
 \end_layout
 
 \begin_layout Standard

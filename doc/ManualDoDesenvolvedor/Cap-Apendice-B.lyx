@@ -267,7 +267,11 @@ Insert Cross-Reference
 \begin_layout Enumerate
 Aqui um exemplo, vou citar material sobre \SpecialChar LyX
  e Latex.
- Veja maiores informações sobre latex em 
+ Veja maiores informações sobre latex em:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
 \begin_inset CommandInset citation
 LatexCommand cite
 key "SL-latex-companion,SL-latex-donald,SL-latex-demo,SL-latex-Guide2e,SL-latex-lamport,SL-latex-lyxEF,SL-latex-lyxtut,SL-latex-lyxUG"
@@ -278,6 +282,7 @@ literal "true"
 .
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
