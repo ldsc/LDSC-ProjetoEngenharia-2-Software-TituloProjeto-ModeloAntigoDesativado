@@ -322,6 +322,13 @@ literal "true"
 
 \begin_layout Section
 Análise de domínio
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Análise-de-domínio"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -353,6 +360,13 @@ Fotografias de sistemas equivalentes/parecidos.
 
 \begin_layout Section
 Formulação teórica
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Formulação-teórica"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -565,6 +579,13 @@ reference "fig:Diagrama-de-Pacotes"
 
 \begin_layout Section
 Diagrama de pacotes – assuntos
+\begin_inset CommandInset label
+LatexCommand label
+name "sec: Diagrama de pacotes – assuntos"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -592,7 +613,11 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
+<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap2-Elaboracao.lyx
 	filename imagens/AnaliseDeDominio.png
+=======
+	filename imagens/DiagramaDeComponentes-Assuntos-Pacotes.png
+>>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap2-Elaboracao.lyx
 	lyxscale 50
 	width 100text%
 

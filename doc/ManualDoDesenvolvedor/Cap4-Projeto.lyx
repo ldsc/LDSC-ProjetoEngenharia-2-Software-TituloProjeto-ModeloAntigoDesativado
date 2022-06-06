@@ -1306,8 +1306,13 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
+<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap4-Projeto.lyx
 	filename imagens/DiagramaComponentes.png
 	lyxscale 25
+=======
+	filename imagens/DiagramaDeComponentes-Asuntos-Pacotes-Imago.png
+	lyxscale 90
+>>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap4-Projeto.lyx
 	width 100text%
 
 \end_inset
@@ -1341,6 +1346,16 @@ name "cap:Diagrama-de-componentes"
 
 \begin_layout Section
 Diagrama de implantação
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Diagrama de implantação
+\end_layout
+
+\end_inset
+
+
 \begin_inset Index idx
 status open
 
@@ -1409,8 +1424,13 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
+<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap4-Projeto.lyx
 	filename imagens/DiagramExecucao.png
 	lyxscale 30
+=======
+	filename imagens/DiagramDeExecucao.png
+	lyxscale 50
+>>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap4-Projeto.lyx
 	width 100text%
 
 \end_inset

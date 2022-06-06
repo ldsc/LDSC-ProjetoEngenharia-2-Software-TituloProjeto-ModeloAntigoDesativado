@@ -107,6 +107,13 @@
 
 \begin_layout Chapter
 Ciclos Construção
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Ciclos-Construção-Implementacao"
+
+\end_inset
+
+
 \begin_inset Index idx
 status open
 
@@ -339,7 +346,7 @@ status open
 \backslash
 lstset{style=C++} 
 \backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CAplicacao.}, label={CAp
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CAplicacao}, label={CAp
 licacao-h}] {../../src/CAplicacao.h}
 \end_layout
 
@@ -380,7 +387,7 @@ status open
 \backslash
 lstset{style=C++} 
 \backslash
-lstinputlisting[ caption={Arquivo de implementação da classe CAplicacao.},
+lstinputlisting[ caption={Arquivo de implementação da classe CAplicacao},
  label={CAplicacao-cpp}] {../../src/CAplicacao.cpp}
 \end_layout
 
@@ -424,7 +431,7 @@ lstinputlisting[ caption={
 
 Arquivo de implementação da função 
 \backslash
-texttt{main()}.}, label={programa-cpp}] {../../src/Programa.cpp}
+texttt{main()}}, label={programa-cpp}] {../../src/Programa.cpp}
 \end_layout
 
 \end_inset
@@ -454,18 +461,9 @@ status open
 
 
 \backslash
-lstset{language=,backgroundcolor=
+lstset{style=out}   
 \backslash
-color{azulclaro}}   
-\backslash
-lstinputlisting[caption=] {../../src/Programa.out}   
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstset{backgroundcolor=} 
+lstinputlisting[caption=] {../../src/Programa.out}
 \end_layout
 
 \end_inset

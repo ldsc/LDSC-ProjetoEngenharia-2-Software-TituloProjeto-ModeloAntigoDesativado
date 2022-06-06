@@ -124,6 +124,13 @@ AOO
 \end_inset
 
  – Análise Orientada a Objeto
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Análise Orientada a Objeto"
+
+\end_inset
+
+
 \begin_inset Index idx
 status collapsed
 
@@ -191,6 +198,13 @@ O resultado da análise é um conjunto de diagramas que identificam os objetos
 
 \begin_layout Section
 Diagramas de classes
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Diagramas-de-classes"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -214,7 +228,11 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
+<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap3-AnaliseOrientadaAObjeto.lyx
 	filename imagens/DiagramaClasses.png
+=======
+	filename imagens/DiagramaDeClasses.png
+>>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap3-AnaliseOrientadaAObjeto.lyx
 	lyxscale 50
 	width 100text%
 
@@ -342,6 +360,13 @@ O diagrama de seqüência enfatiza a troca de eventos e mensagens e sua ordem
 \shape italic
 \emph on
 Diagrama de sequência geral
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec: Diagrama de sequência geral"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -376,8 +401,13 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
+<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap3-AnaliseOrientadaAObjeto.lyx
 	filename imagens/DiagramaSequencia-Eventos.png
 	lyxscale 40
+=======
+	filename imagens/DiagramaDeSequencia-Eventos.png
+	lyxscale 50
+>>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap3-AnaliseOrientadaAObjeto.lyx
 	width 100text%
 
 \end_inset
@@ -424,6 +454,13 @@ deve mostrar uma sequência geral
 \shape italic
 \emph on
 Diagrama de sequência específico
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec: Diagrama de sequência específico"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -521,7 +558,12 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
+<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap3-AnaliseOrientadaAObjeto.lyx
 	filename imagens/DiagramaComunicacao.png
+=======
+	filename imagens/DiagramaDeComunicacao.png
+	lyxscale 85
+>>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap3-AnaliseOrientadaAObjeto.lyx
 	width 100text%
 
 \end_inset
@@ -554,7 +596,7 @@ name "cap:Diagrama-de-comunicação"
 \end_layout
 
 \begin_layout Section
-Diagrama de máquina de estado
+Diagrama de estado
 \begin_inset Index idx
 status collapsed
 
@@ -566,10 +608,10 @@ estado
 
 
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
-Diagrama de máquina de estado
+Diagrama de estado
 \end_layout
 
 \end_inset
@@ -628,8 +670,13 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
+<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap3-AnaliseOrientadaAObjeto.lyx
 	filename imagens/DiagramaEstados.png
 	lyxscale 30
+=======
+	filename imagens/DiagramaDeEstado-ClasseSimulador.png
+	lyxscale 85
+>>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap3-AnaliseOrientadaAObjeto.lyx
 	width 100text%
 
 \end_inset
@@ -663,6 +710,13 @@ name "cap:Diagrama-de-maquina-de-estado"
 
 \begin_layout Section
 Diagrama de atividades
+\begin_inset CommandInset label
+LatexCommand label
+name "sec: Diagrama de atividades"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -712,8 +766,13 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
+<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap3-AnaliseOrientadaAObjeto.lyx
 	filename imagens/DiagramaAtividade.png
 	lyxscale 40
+=======
+	filename imagens/DiagramaDeAtividade-ClasseIntegral-MetodoArea.png
+	lyxscale 85
+>>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap3-AnaliseOrientadaAObjeto.lyx
 	width 100text%
 
 \end_inset

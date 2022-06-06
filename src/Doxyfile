@@ -1,3 +1,18 @@
+# Arquivo gerado pelo programa doxygen
+# este arquivo é um arquivo de configuração, contém as instruções a serem seguidas
+# pelo programa doxygen para gerar a documentação do desenvolvedor.
+
+# Para aprender a usar o javadoc/doxegen consulte o site: https://www.doxygen.nl/
+
+# O que você pode fazer é ler as instruções abaixo e modificar as configurações,
+# basicamente são instruções com YES/NO, ou seja, considerar ou não determinada opção.
+
+# Dica:
+# 1- Documente seu código
+# 2- Rode o doxygen
+# 3- Veja como ficou a documentação abrindo html/index.html
+# 4- Modifique este arquivo e rode novamente o doxygen, veja como ficou abrindo html/index.html
+
 # Doxyfile 1.8.6
 
 # This file describes the settings to be used by the documentation system
@@ -32,7 +47,7 @@ DOXYFILE_ENCODING      = UTF-8
 # title of most generated pages and in a few other places.
 # The default value is: My Project.
 
-PROJECT_NAME           = "My Project"
+PROJECT_NAME           = "Nome do seu projeto"
 
 # The PROJECT_NUMBER tag can be used to enter a project or revision number. This
 # could be handy for archiving the generated documentation or if some version

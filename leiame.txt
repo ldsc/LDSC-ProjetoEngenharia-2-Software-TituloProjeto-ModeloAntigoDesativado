@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 Uso do modelo de projeto armazenado no github
 ==============================================
@@ -5,8 +6,19 @@ Nota: Estes arquivos estão disponibilizados no site https://github.com/ldsc
 https://github.com/ldsc/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica
 
 Como obter os arquivos modelos?
+=======
+Nota: Estes arquivos estão disponibilizados no site
+https://github.com/ldsc/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica
+
+Instale o git
+>>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx)
 ================================
-Abra um terminal e digite:
+Verifique se o programa git esta instalado em seu sistema;
+se não estiver instale. Veja https://git-scm.com/
+
+Baixe o modelo padrão
+================================
+Após instalar, abra um terminal e digite:
 git clone https://github.com/ldsc/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica
 
 ou abra um navegador e digite o endereço abaixo:
@@ -25,20 +37,30 @@ doc
     Arquivo com todas as instruções e explicações de como o software foi desenvolvido, incluindo os capítulos:
     Especificação/elaboração/análise/projeto/implementação/teste/documentação.
     
-doc/manualUsuario-lyx:
+doc/ManualDoUsuario:
     Diretório onde ficarão os arquivos do lyx usados para gerar o ManualDoUsuario.  
     Note que neste manual não entram informações de como o software pode ser modificado.
     São apenas instruções de como instalar e usar o programa, o foco é o usuário final.
     
+<<<<<<< HEAD
 doc/manualUsuario-lyx/imagens: 
     Neste diretório você deve colocar todas as imagens a serem utilizadas e referenciadas no manual do Usuário.
+=======
+doc/ManualDoUsuario/imagens:
+	Neste diretório você deve colocar todas as imagens a serem utilizadas e referenciadas no manual do Usuário.
+>>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx)
 
-doc/manualDesenvolvedor-lyx:
+doc/ManualDoDesenvolvedor:
     Diretório onde ficarão os arquivos do lyx usados para gerar o ManualDoDesenvolvedor.  
     A ideia é que estes arquivos do lyx contenham todas as informações e instruções de como o software foi desenvolvido, permitindo aos interessados modificar/melhorar o software desenvolvido.
    
+<<<<<<< HEAD
 doc/manualDesenvolvedor-lyx/imagens: 
     Neste diretório você deve colocar todas as imagens a serem utilizadas e referenciadas no manual do desenvolvedor.
+=======
+doc/ManualDoDesenvolvedor/imagens:
+	Neste diretório você deve colocar todas as imagens a serem utilizadas e referenciadas no manual do desenvolvedor.
+>>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx)
    
 src:  
     Neste diretório você deve colocar todas as listagens de código, arquivos .h .cpp.
@@ -70,6 +92,7 @@ Como usar documentação de código com javadoc/doxygen?
     Nota: Acesse http://www.stack.nl/~dimitri/doxygen/index.html para maiores informações sobre doxygen e javadoc.
     Na apostila/livro do curso temos aula e apresentação sobre o uso do formato javadoc.
 
+<<<<<<< HEAD
 Usando o editor profissional LyX/TeX/LaTeX
 ==========================================
     O lyx esta disponibilizado em http://www.lyx.org.
@@ -115,3 +138,52 @@ Usando o editor profissional LyX/TeX/LaTeX
     lyx-common-2.3.5-1.fc31.noarch
     lyx-2.3.5-1.fc31.x86_64
 	
+=======
+Nota:
+=====
+	O lyx esta disponibilizado em http://www.lyx.org.
+	Baixe a versão mais recente.
+	Instale.
+	Leia o tutorial.
+	Se tiver dúvidas procure seus colegas, vários já sabem usar o lyx.
+	Se continuar com dúvidas procure o monitor.
+	Se continuar com dúvidas me procure.
+	
+
+	Dica para usuários Windows:
+	==============================
+	- Se for usar o Windows instale a versão completa do LyX, disponível no site:
+	http://wiki.lyx.org/Windows/Windows
+
+	- Veja o que diz o site em  20/08-2020:
+	Current stable version: 2.3.0
+	Standard installer: LyX-230-Installer-005.exe (58 MB). This installer requires that LaTeX (MikTeX or TeXLive) are 
+	already installed.
+	Previous stable version: 2.2.3
+	Standard installer: LyX-230-Installer-005.exe (53 MB). This installer requires that LaTeX (MikTeX or TeXLive) 
+	are already installed.
+	
+	Versions for Cygwin
+	If you use Cygwin on Windows, it may be more convenient to use the cygwin binary, since latex, python, etc. 
+	are all available from cygwin. You should download lyx-2.3.0-cygwin.tar.gz, un-tar it using Cygwin (not native) tools, 
+	and follow the instructions . See LyXOnCygwin for more information.
+
+
+	Dica abntex:
+	=============
+	Se após a instalação do LyX o abntex não funcionar tente instalar o pacote abntex-lyx-0.8-2.noarch.
+
+	Dica usuário GNU/Linux
+	=======================
+	Na minha máquina antiga tenho instalado os seguintes pacotes:
+	abntex-lyx-0.8-2.noarch
+	lyx-common-2.1.3-1.fc21.noarch
+	lyx-2.1.3-1.fc21.x86_64
+	lyx-fonts-2.1.3-1.fc21.noarch
+	
+	Na máquina atual tenho
+	texlive-abntex2-svn49248-19.fc31.noarch
+	lyx-fonts-2.3.5-1.fc31.noarch
+	lyx-common-2.3.5-1.fc31.noarch
+	lyx-2.3.5-1.fc31.x86_64
+>>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx)

@@ -128,6 +128,13 @@ space - Especificação}
 
 \begin_layout Chapter
 Concepção
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Concepção"
+
+\end_inset
+
+
 \begin_inset Index idx
 status collapsed
 
@@ -247,7 +254,14 @@ Plotar gráficos usando biblioteca externa CGnuplot (tem livro do gnuplot
 
 \end_deeper
 \begin_layout Section
-Nome do sistema/produto 
+Nome do sistema/produto
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:2.2 Nome do sistema/produto"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -331,6 +345,13 @@ Missão
 
 \begin_layout Section
 Especificação
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Especificação"
+
+\end_inset
+
+
 \begin_inset Index idx
 status open
 
@@ -1080,6 +1101,13 @@ As Figuras devem ficar GRANDES; bem legíveis!! se necessário dar zoom!!
 
 \begin_layout Section
 Casos de uso
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Casos-de-uso"
+
+\end_inset
+
+
 \begin_inset Index idx
 status collapsed
 
@@ -1154,6 +1182,13 @@ ação, adicionando às especificações textuais alguns cenários de uso do sof
 
 \begin_layout Subsection
 Diagrama de caso de uso geral
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec: Diagrama de caso de uso geral"
+
+\end_inset
+
+
 \begin_inset Note Note
 status open
 
@@ -1196,9 +1231,16 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
+<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap1-Concepcao.lyx
 	filename imagens/DiagramaCasoUso-Geral.png
 	lyxscale 30
+=======
+	filename imagens/DiagramaDeCasoUso-Geral.png
+	lyxscale 50
+>>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap1-Concepcao.lyx
 	width 100text%
+	height 80theight%
+	keepAspectRatio
 
 \end_inset
 
@@ -1231,11 +1273,18 @@ name "cap:Diagrama-caso-uso-geral"
 
 \begin_layout Subsection
 Diagrama de caso de uso específico
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec: Diagrama de caso de uso específico"
+
+\end_inset
+
+
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
- do software
+do software
 \end_layout
 
 \end_inset
@@ -1292,7 +1341,11 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
+<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap1-Concepcao.lyx
 	filename imagens/DiagramaCasoDeUso-AnaliseDosResultados.png
+=======
+	filename imagens/DiagramaDeCasoDeUso-Especifico-AnaliseDosResultados.png
+>>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap1-Concepcao.lyx
 	width 100text%
 
 \end_inset

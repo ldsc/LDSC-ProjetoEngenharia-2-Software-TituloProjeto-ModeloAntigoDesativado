@@ -191,6 +191,12 @@ O primeiro parágrafo da introdução pode ser um super resumo do trabalho.
  A ideia é fazer um resumo do resumo.
 \end_layout
 
+\begin_layout Itemize
+ESTE MODELO TEM TEXTOS EXPLICATVOS QUE DEVEM SER ELIMINADOS DA VERSÃO FINAL.
+ O OBJETIVO DE COLOCAR AS EXPLICAÇÕES É FACILITAR O ENTENDIMENTO DO QUE
+ DEVE ENTRAR EM CADA SEÇÃO.
+\end_layout
+
 \begin_layout Section
 Escopo do problema
 \begin_inset CommandInset label
@@ -211,12 +217,6 @@ a de software aplicado a solução de um problema específico de engenharia
  Trabalhando-se com todo ciclo de um projeto, isto é, especificação, elaboração,
  análise, projeto, desenvolvimento, teste e documentação.
  
-\end_layout
-
-\begin_layout Itemize
-ESTE MODELO TEM TEXTOS EXPLICATVOS QUE DEVEM SER ELIMINADOS DA VERSÃO FINAL.
- O OBJETIVO DE COLOCAR AS EXPLICAÇÕES É FACILITAR O ENTENDIMENTO DO QUE
- DEVE ENTRAR EM CADA SEÇÃO.
 \end_layout
 
 \begin_layout Itemize
@@ -315,6 +315,13 @@ Implementar manual simplificado de uso do software.
 \end_deeper
 \begin_layout Section
 Metodologia utilizada
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Metodologia-utilizada"
+
+\end_inset
+
+
 \begin_inset Index idx
 status open
 
