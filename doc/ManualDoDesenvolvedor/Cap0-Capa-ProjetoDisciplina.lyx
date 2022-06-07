@@ -869,7 +869,7 @@ O título deve ser o mais claro possível, não deixando dúvidas sobre o assunt
 \align center
 
 \size large
-PROJETO ENGENHARIA
+PROJETO DE ENGENHARIA
 \begin_inset Newline newline
 \end_inset
 
@@ -882,10 +882,6 @@ XXX
 \end_inset
 
 TRABALHO DA DISCIPLINA PROGRAMAÇÃO PRÁTICA
-\begin_inset Newline newline
-\end_inset
-
-PROJETO ENGENHARIA
 \end_layout
 
 \begin_layout Standard
