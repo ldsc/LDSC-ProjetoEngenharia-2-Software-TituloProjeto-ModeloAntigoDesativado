@@ -3,7 +3,8 @@
 │   ├── instrucoes-git.txt
 │   ├── instrucoes-javadoc-doxygen.txt
 │   ├── instrucoes-lyx.txt
-│   └── intrucoes-diretorio.txt
+│   ├── intrucoes-diretorio.txt
+│   └── tree-listaCompletaArquivosProjeto
 ├── doc
 │   ├── instrucoes
 │   ├── ManualDoDesenvolvedor
@@ -32,4 +33,4 @@
 │   └── test3
 └── tree
 
-14 directories, 18 files
+14 directories, 19 files

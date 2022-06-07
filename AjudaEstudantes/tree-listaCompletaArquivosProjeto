@@ -3,13 +3,15 @@
 │   ├── instrucoes-git.txt
 │   ├── instrucoes-javadoc-doxygen.txt
 │   ├── instrucoes-lyx.txt
-│   └── intrucoes-diretorio.txt
+│   ├── intrucoes-diretorio.txt
+│   └── tree-listaCompletaArquivosProjeto
 ├── doc
 │   ├── instrucoes
 │   ├── ManualDoDesenvolvedor
 │   │   ├── bibliografia.bib
 │   │   ├── Cap0b-ResumoAbstract.lyx
 │   │   ├── Cap0-Capa-ProjetoDisciplina.lyx
+│   │   ├── Cap0-Capa-ProjetoDisciplina.lyx~
 │   │   ├── Cap0-Capa-ProjetoTCC.lyx
 │   │   ├── Cap0-Introducao-Escopo-Objetivos-Metodologia.lyx
 │   │   ├── Cap1-Concepcao.lyx
@@ -20,11 +22,7 @@
 │   │   ├── Cap6-Ciclos-Construcao-Implementacao.lyx
 │   │   ├── Cap7-Teste.lyx
 │   │   ├── Cap8-DocumentacaoDoDesenvolvedor.lyx
-│   │   ├── Cap9-Documentacao-ManualUsuario.lyx
 │   │   ├── Cap-Apendice-A.lyx
-│   │   ├── Cap-Apendice-B.lyx
-│   │   ├── Cap-Apendice-C-CriandoProjetoGithub.lyx
-│   │   ├── gera_dvi_ps_pdf
 │   │   ├── imagens
 │   │   │   ├── AnaliseDeDominio.png
 │   │   │   ├── DiagramaDeAtividade-ClasseIntegral-MetodoArea.png
@@ -49,13 +47,15 @@
 │   │   │   └── Interface-SimuladorTranscal-Nicholas.png
 │   │   ├── Instrucoes_para_o_master.txt
 │   │   ├── Makefile
-│   │   ├── ManualDoDesenvolvedor-ComInstrucoes.pdf
-│   │   └── ManualDoDesenvolvedor.lyx
+│   │   ├── ProjetoEngenharia-ManualDoDesenvolvedor-ComInstrucoes.pdf
+│   │   ├── ProjetoEngenharia-ManualDoDesenvolvedor.lyx
+│   │   └── ProjetoEngenharia-ManualDoDesenvolvedor.pdf
 │   ├── ManualDoUsuario
 │   │   ├── bibliografia.bib
 │   │   ├── Cap0-Capa.lyx
 │   │   ├── Cap1-Instalacao-Dependencias.lyx
 │   │   ├── Cap2-Interface-ComoUsar.lyx
+│   │   ├── Cap2-Interface-ComoUsar.lyx~
 │   │   ├── Cap3-ExemplosDeUso.lyx
 │   │   ├── Cap4-Contatos.lyx
 │   │   ├── imagens
@@ -63,8 +63,8 @@
 │   │   │   ├── Interface-Simulador-Transcal-Guilherme1.png
 │   │   │   ├── Interface-Simulador-Transcal-Guilherme2.png
 │   │   │   └── Interface-SimuladorTranscal-Nicholas.png
-│   │   ├── ManualDoUsuario.lyx
-│   │   └── ManualDoUsuario.pdf
+│   │   ├── ProjetoEngenharia-ManualDoUsuario.lyx
+│   │   └── ProjetoEngenharia-ManualDoUsuario.pdf
 │   └── ManualTecnico
 ├── master
 ├── MaterialAuxiliar
@@ -106,7 +106,6 @@
 │   ├── test1
 │   ├── test2
 │   └── test3
-├── tree
-└── tree-listaCompletaArquivos
+└── tree
 
-16 directories, 93 files
+16 directories, 92 files
