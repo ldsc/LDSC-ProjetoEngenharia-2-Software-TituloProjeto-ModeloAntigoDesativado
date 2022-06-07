@@ -152,18 +152,12 @@ Apresenta-se neste capítulo do projeto de engenharia a concepção, a especific
 o do sistema a ser modelado e desenvolvido.
 \end_layout
 
-\begin_layout Section
-#O que é especificação?
+\begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
-Apague esta seção!
-\end_layout
-
-\end_inset
-
-
+#O que é especificação?
 \end_layout
 
 \begin_layout Description
@@ -173,14 +167,14 @@ Nota: os textos que explicam o que é especificação; diagrama caso uso; etc...
  retirados/apagados.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 A primeira etapa do desenvolvimento de um sistema é a concepção, a definição
  de requisitos a serem satisfeitos e a especificação do sistema (descrição
  do objetivo e o que se espera do sistema a ser desenvolvido, o contexto
  da aplicação).
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Na concepção ocorre a primeira reunião da equipe de desenvolvimento com
  os clientes, quando é feita a especificação do software.
  O cliente por meio das especificações e das entrevistas, passa para o analista
@@ -189,13 +183,13 @@ Na concepção ocorre a primeira reunião da equipe de desenvolvimento com
 nvolvedores.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 O resultado da etapa de especificação é um conjunto formal de documentos
  e requisitos organizados pelo analista do sistema com apoio dos usuários.
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 As 
 \shape italic
 especificações
@@ -231,28 +225,33 @@ IMPORTANTE:
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Plain Layout
 Como requisitos mínimos o software deve:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Solicitar dados ao usuário via terminal (teclado/tela);
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Mostrar resultados na tela;
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Ler dados de entrada e gerar dados de saída em arquivos de disco;
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Plotar gráficos usando biblioteca externa CGnuplot (tem livro do gnuplot
  na biblioteca );
 \end_layout
 
 \end_deeper
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Nome do sistema/produto
 \begin_inset CommandInset label
@@ -804,7 +803,11 @@ Mac
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 #O que são os casos de uso
 \begin_inset Index idx
 status collapsed
@@ -845,7 +848,7 @@ Apague esta seção!
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Segundo 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -864,7 +867,7 @@ cenário
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Um 
 \shape italic
 caso de uso
@@ -878,7 +881,7 @@ caso de uso
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Segundo 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -903,190 +906,18 @@ literal "true"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Devem ser montados diversos diagramas de caso de uso.
  Por exemplo: para cada cenário, crie diagramas de seqüência listando os
  objetos e os diversos eventos que partem de um objeto para outro.
 \end_layout
 
-\begin_layout Standard
-A Tabela 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "cap:Exemplo-de-um-caso-de-uso (tabela)"
-
 \end_inset
 
- mostra os itens a serem incluídos na descrição do caso de uso, podendo-se
- ainda incluira lista de atores e as pré-condições para execução.
- O item etapas é opcional, pois elas podem ser incluídas diretamente no
- diagrama de caso de uso.
+
 \end_layout
 
 \begin_layout Standard
-Uma vez apresentados os conceitos relacionados aos casos de uso, cenários,
- apresentaremos como modelar os cenários com os diagramas de caso de uso
- da UML.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Exemplo de caso de uso
-\begin_inset CommandInset label
-LatexCommand label
-name "cap:Exemplo-de-um-caso-de-uso (tabela)"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset space ~
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="block" valignment="top" width="10cm">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Nome do caso de uso:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Cálculo da integral de uma função.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Resumo/descrição:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Determinação da integral de uma função em um dado intervalo.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Etapas: 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1.
- Criar objeto função.
-\end_layout
-
-\begin_layout Plain Layout
-2.
- Criar objeto de integração.
-\end_layout
-
-\begin_layout Plain Layout
-3.
- Definir intervalo de integração e número de pontos.
-\end_layout
-
-\begin_layout Plain Layout
-4.
- Calcular área da função.
-\end_layout
-
-\begin_layout Plain Layout
-5.
- Gerar gráficos.
-\end_layout
-
-\begin_layout Plain Layout
-6.
- Analisar resultados.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Cenários alternativos:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Um cenário alternativo envolve uma entrada errada do usuário (por exemplo,
- a função é logarítmica, e o intervalo vai de -1 a 10).
- O software apresentará um bug quando for determinar o logarítmo de -1.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \begin_inset Note Note
 status open
 
@@ -1131,53 +962,146 @@ do software
 \end_layout
 
 \begin_layout Standard
-....tabela descritiva aqui...
-\end_layout
-
-\begin_layout Subsection
-#O que são os diagramas de casos de uso
-\begin_inset Index idx
-status collapsed
-
-\begin_layout Plain Layout
-casos de uso
-\end_layout
+A Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Exemplo-de-um-caso-de-uso (tabela)"
 
 \end_inset
 
-
-\begin_inset Index idx
-status collapsed
-
-\begin_layout Plain Layout
-Diagrama de caso de uso
+ mostra a descrição de um caso de uso.
 \end_layout
 
-\end_inset
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
 
+\begin_layout Plain Layout
+\begin_inset Caption Standard
 
+\begin_layout Plain Layout
+Caso de uso 1
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Diagrama-de-casos-de-uso"
+name "cap:Exemplo-de-um-caso-de-uso (tabela)"
 
 \end_inset
 
-?
+
 \end_layout
 
-\begin_layout Standard
-O diagrama de casos de uso é uma representação visual dos casos de uso.
- É o diagrama mais simples da UML, sendo utilizado para demonstrar os cenários
- de uso do sistema pelos usuários, os quais ao verem esses diagramas terão
- uma visão geral do sistema.
- 
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-O diagrama de caso de uso pode ser utilizado durante e após a etapa de especific
-ação, adicionando às especificações textuais alguns cenários de uso do software
- a ser desenvolvido.
- 
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="block" valignment="top" width="10cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nome do caso de uso:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Resumo/descrição:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Etapas:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cenários alternativos:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1231,13 +1155,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap1-Concepcao.lyx
-	filename imagens/DiagramaCasoUso-Geral.png
-	lyxscale 30
-=======
 	filename imagens/DiagramaDeCasoUso-Geral.png
 	lyxscale 50
->>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap1-Concepcao.lyx
 	width 100text%
 	height 80theight%
 	keepAspectRatio
@@ -1341,11 +1260,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap1-Concepcao.lyx
-	filename imagens/DiagramaCasoDeUso-AnaliseDosResultados.png
-=======
 	filename imagens/DiagramaDeCasoDeUso-Especifico-AnaliseDosResultados.png
->>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap1-Concepcao.lyx
 	width 100text%
 
 \end_inset

@@ -1,12 +1,21 @@
 A ideia é que o usuário entre primeiro aqui e tenha acesso a documentação básica de Uso e Desenvolvimento do software;
 
-Coloque aqui:
-============
-Manual do usuário:
-Coloque aqui um pequeno manual de uso do programa, este manual pode ser escrito tento como base o capítulo de test.
+Arquivos e diretórios:
+=======================
 
-Manual do Desenvolvedor:
-Coloque aqui uma cópia da versão final do pdf gerado no diretório lyx; é o documento que explica como o programa foi construído;
+ManualDoDesenvolvedor.pdf: 
+	Cópia do manual do desenvolvedor (como foi desenvolvido o software).
+ManualDoUsuario.pdf: 
+	Cópia do manual do usuário (como usar o software).
+ManualTecnico.pdf:
+	Cópia do manual técnico (detalhes técnicos, equações)	
+	
+ManualDoDesenvolvedor:
+Diretório com todos os arquivos para gerar o manual do desenvolvedor.
 
+ManualDoUsuario:
+Diretório com todos os arquivos para gerar o manual do usuário.
 
+ManualTecnico:
+Diretório com todos os arquivos para gerar o manual técnico-científico.
 
