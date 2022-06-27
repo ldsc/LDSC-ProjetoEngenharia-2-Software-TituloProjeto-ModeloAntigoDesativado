@@ -24,6 +24,8 @@
 % Informa que vai usar o pacote listings, 
 % disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
 \usepackage{listings}
+
+\renewcommand{\lstlistingname}{Listagem}
 \end_preamble
 \options normaltoc, sumarioincompleto
 \use_default_options false
@@ -173,6 +175,16 @@ LatexCommand tableofcontents
 
 \begin_layout Standard
 \begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset CommandInset toc
+LatexCommand lstlistoflistings
 
 \end_inset
 
