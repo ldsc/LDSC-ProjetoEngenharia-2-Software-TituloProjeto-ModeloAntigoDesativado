@@ -1306,13 +1306,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap4-Projeto.lyx
-	filename imagens/DiagramaComponentes.png
-	lyxscale 25
-=======
 	filename imagens/DiagramaDeComponentes-Asuntos-Pacotes-Imago.png
 	lyxscale 90
->>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap4-Projeto.lyx
 	width 100text%
 
 \end_inset
@@ -1424,13 +1419,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap4-Projeto.lyx
-	filename imagens/DiagramExecucao.png
-	lyxscale 30
-=======
 	filename imagens/DiagramDeExecucao.png
 	lyxscale 50
->>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap4-Projeto.lyx
 	width 100text%
 
 \end_inset
@@ -1476,6 +1466,1272 @@ Não perca de vista a visão do todo; do projeto de engenharia como um todo.
  Este é um diferencial fundamental do engenheiro em relação ao técnico,
  a capacidade de desenvolver projetos, de ver o todo e suas diferentes partes,
  de modelar processos/sistemas/produtos de engenharia.
+\end_layout
+
+\begin_layout Subsection
+Lista de características <<features>>
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec: Lista de características <<features>>"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No final do ciclo de concepção e análise chegamos a uma lista de características
+ <<
+\emph on
+features
+\emph default
+>> que teremos de implementar.
+\end_layout
+
+\begin_layout Standard
+Após a análises desenvolvidas e considerando o requisito de que este material
+ deve ter um formato didático, chegamos a seguinte lista:
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+nota importante, o número de versões irá depender do tamanho do ciclo, ou
+ seja, número de dias de cada ciclo e capacidade da equipe.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+v0.1
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Lista de classes a serem implementadas
+\end_layout
+
+\begin_layout Itemize
+Testes
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+v0.3
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Lista de classes a serem implementadas
+\end_layout
+
+\begin_layout Itemize
+Testes
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+v0.7
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Lista de classes a serem implementadas
+\end_layout
+
+\begin_layout Itemize
+Testes
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Tabela classificação sistema
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Tabela-classificação-sistema"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A Tabela a seguir é utilizada para classificação do sistema desenvolvido.
+ Deve ser preenchida na etapa de projeto e revisada no final, quando o software
+ for entregue na sua versão final.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+A tabela esta preenchida com dados de um dos exemplos de projeto; você deve
+ preencher de acordo com o problema específico que esta resolvendo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="22" columns="2">
+<features islongtable="true" longtabularalignment="center">
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="12cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Licença:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[X] livre GPL-v3 [ ] proprietária
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Engenharia de software:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[ ]
+\color blue
+ 
+\color inherit
+tradicional [X] ágil [ ] outras
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Paradigma de programação:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[ ] estruturada [X] orientado a objeto - POO [ ] funcional
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Modelagem UML:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[X] básica 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Diagramas de caso de uso, de componentes(assuntos/pacotes/componentes),
+ de classes, de sequência, de distribuição
+\end_layout
+
+\end_inset
+
+[X] intermediária 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Diagramas de máquina de estado, de atividades
+\end_layout
+
+\end_inset
+
+[ ] avançada
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Uso de recursos avançados de UML
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Algoritmos
+\color inherit
+:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[X] alto nível 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\color blue
+:
+\color inherit
+ são algoritmos que são implementados utilizando instruções mais complexas.
+\end_layout
+
+\end_inset
+
+[X] baixo nível
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\color blue
+:
+\color inherit
+ são algoritmos que são implementados utilizando instruções mais básicas
+ e essenciais.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+implementação: [ ] recursivo ou [X] iterativo
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+\color blue
+:
+\series default
+ 
+\color inherit
+um algoritmo iterativo utiliza estruturas de repetição, fazendo com que
+ determinadas atividades sejam repetidas tantas vezes quanto necessárias,
+ normalmente temos algum critério de parada.
+ Já um algoritmo recursivo é um algoritmo que chama a sí mesmo.
+ Note que chamar a sí mesmo é uma forma de iteração.
+ O exemplo do pagamento dos salários é iterativo, foi do empregado 1 ao
+ empregado 10000.
+\end_layout
+
+\end_inset
+
+; [X] determinístico 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\color blue
+:
+\color inherit
+ é determinístico quando o caminho para solução é exato e não-determinístico
+ quando usamos mecanismos de busca/estimativas para encontrar uma solução.
+\end_layout
+
+\end_inset
+
+ou [ ] não-determinístico; [ ] exato ou [X] aproximado
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\color blue
+: 
+\color inherit
+muitas vezes tenho a equação que me dá uma solução exata, quando utilizo
+ esta equação meu algoritmo é exato.
+ Mas em muitas situações eu não tenho a soluição exata, tenho apenas equações
+ aproximadas, quando uso uma equação inexata ou empírica, sei que meu algoritmo
+ é aproximado.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+concorrências: [X] serial [X] concorrente [X] paralelo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+paradigma: [X] dividir para conquistar
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Itemize
+
+\series bold
+\color blue
+:
+\series default
+ 
+\color inherit
+são algoritmos que trabalham com a divisão e subdivisão de um problema em
+ partes menores;
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Exemplo: escrever seu TCC - Trabalho de Conclusão de Curso, você irá dividir
+ o mesmo em vários capítulos, os capítulos em seções e as seções em subseções.
+ De forma que então conseguirá desenvolver seu trabalho, pois as partes
+ pequenas tornam-se viáveis de serem feitas.
+\end_layout
+
+\end_deeper
+\end_inset
+
+ [ ] programação linear
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+\color blue
+:
+\series default
+\color inherit
+ o problema é resolvido através de programação linear envolvendo a busca
+ de máximos e mínimos
+\end_layout
+
+\end_inset
+
+ [ ] transformação/ redução
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Itemize
+
+\series bold
+\color blue
+:
+\series default
+\color inherit
+ são algoritmos que mudam o problema fazendo associações com outros, geralmente
+ eu conheço a solução deste outro problema, resolvo o mesmo, e então retorno;
+ é exatamente o que fazemos por exemplo quando usamos uma transformada matemátic
+a para resolver um problema.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Exemplo: não sei resolver estas equações professor.
+ Faça uma transformada de Laplace, resolva no espaço de Laplace e então
+ volte.
+\end_layout
+
+\end_deeper
+\end_inset
+
+ [ ] busca e enumeração
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+\color blue
+:
+\series default
+\color inherit
+ são algoritmos que usam a teoria dos grafos.
+\end_layout
+
+\end_inset
+
+ [ ] heurístico e probabilístico
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+\color blue
+:
+\series default
+\color inherit
+ são algoritmos que trabalham com números aleatórios e heurísticas, aproximações
+, em busca da solução.
+\end_layout
+
+\end_inset
+
+ [ ] baseados em pilhas
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+\color blue
+:
+\series default
+\color inherit
+ são algoritmos de cálculo implementados utilizando o conceito de pilhas
+ e Notação Polonesa Inversa (
+\emph on
+RPN - Reverse Polish Notation
+\emph default
+), também conhecida como notação pós-fixada.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Software:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[ ] de base
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Itemize
+
+\series bold
+: 
+\series default
+Estão relacionados ao funcionamento do computador e seus recursos (processador,
+ memória, hd, teclado, mouse, portas, etc).
+ Exemplos:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Sistemas operacionais (Windows, GNU/Linux, Mac Os X, Android).
+\end_layout
+
+\begin_layout Itemize
+Suporte ao sistema operacional (
+\emph on
+drivers 
+\emph default
+de dispositivos).
+\end_layout
+
+\begin_layout Itemize
+Suporte ao desenvolvimento de software (compiladores,
+\emph on
+ debugers
+\emph default
+, 
+\emph on
+profilers
+\emph default
+, ambientes de desenvolvimento).
+\end_layout
+
+\begin_layout Itemize
+Suporte a manutenção do computador (utilitários).
+\end_layout
+
+\end_deeper
+\end_inset
+
+ [X] aplicados
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+: 
+\series default
+São os demais softwares, os que nos ajudam no dia a dia.
+ Podemos dividir em softwares de cunho geral, específicos e científicos.
+ Esta divisão faz sentido pois os softwares específicos exigem conhecimentos
+ técnicos da área específica e os softwares científicos tem requisitos diferenci
+ados no que se refere a interface, documentação, demandas de otimização,
+ consumo de memória e performance.
+ Exemplos:
+\end_layout
+
+\end_inset
+
+ [ ] de cunho geral
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Itemize
+Editor de texto, editor de apresentações e planilha eletrônica (ex: Office,
+ Libre Office).
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Aplicativos para ver filmes, ouvir músicas e jogos eletrônicos.
+\end_layout
+
+\begin_layout Itemize
+Aplicações web como navegador de internet, gerenciador de email, gerenciador
+ de tarefas (chrome, gmail).
+\end_layout
+
+\begin_layout Itemize
+Gerenciador de arquivos na rede (ex: dropbox, google drive, github).
+\end_layout
+
+\end_deeper
+\end_inset
+
+ [X] específicos para determinada área
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Itemize
+Da área de medicina (interpretação de imagens e diagnósticos).
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Da área de direito (gestão de documentos e processos).
+\end_layout
+
+\begin_layout Itemize
+Da área de engenharia (CAD, modeladores, simuladores específicos).
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Com uso de IA - Inteligência Artificial.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_inset
+
+ [X] educativo [X] científico
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Modeladores e simuladores de cunho acadêmico.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+instruções: [X] alto nível [ ] baixo nível
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+interrupções/assembler
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+otimização: [X] serial não otimizado
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+:
+\series default
+ executa uma sequência de instruções de forma serial (não existe antecipação,
+ nem desvios).
+ Não houve preocupação com desempenho.
+ Não foram aproveitadas opções de otimização do compilador e do processador
+ específico.
+ É a forma de programação mais usual!
+\end_layout
+
+\end_inset
+
+ [X] serial otimizado
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+: 
+\series default
+Neste caso houve preocupação com desempenho, com a escolha dos melhores
+ algoritmos, com alocação de memória(ex: uso de ponteiros), com a forma
+ como a linguagem e o sistema operacional lidam com a memória, com a chamada
+ das funções.
+ Foram aproveitadas opções de otimização do compilador e do processador
+ específico.
+ É a forma de otimização mais usual, a primeira a ser adotada.
+\end_layout
+
+\end_inset
+
+ [X] concorrente
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+: 
+\series default
+Neste caso dois ou mais processos/
+\emph on
+threads
+\emph default
+ diferentes rodam ao mesmo tempo e trocam informações entre sí.
+ Um exemplo típico é o caso do produtor/consumidor.
+ O produtor gera dados que são processador pelo consumidor.
+ Note que teremos pelo menos dois núcleos sendo utilizados, cada um fazendo
+ um processamento diferente.
+ Note que os softwares podem ter sido desenvolvidos em linguagens diferentes,
+ a comunicação pode ser feita por exemplo via pipe (um canal de comunicação
+ entre programas).
+\end_layout
+
+\end_inset
+
+ [X] paralelo
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+:
+\series default
+ Neste caso dois ou mais processos/
+\emph on
+threads
+\emph default
+ iguais rodam em paralelo.
+ Um exemplo típico em engenharia é pegar um cálculo muito longo e dividir
+ o mesmo.
+ Por exemplo, preciso aplicar um filtro passa baixa sobre uma imagem grande.
+ Se tenho 4 núcleos a disposição divido a imagem em 4 pedaços e processo
+ cada pedaço usando um dos núcleos.
+ Se este processamento for independente é fácil implementar, porém, se tiver
+ intersecções, então terei de usar mecanismos de comunicação entre processos/thr
+eads.
+\end_layout
+
+\end_inset
+
+ [ ] vetorial
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+:
+\series default
+ alguns hardwares possibilitam o uso de processamento vetorial, antigamente
+ eram muito específicos e caros, mas hoje em dia várias CPUs tem capacidade
+ de processamento vetorial, por exemplo com o uso de SIMD - Uma Instrução
+ Múltiplos Dados.
+ A ideia aqui é que o processador carrega um vetor de dados A, carrega um
+ vetor de dados B, e realiza a operação de soma armazenando o resultado
+ em C.
+ Isto é feito simultaneamente, isto é, as operações C[0] = A[0] + B[0];
+ C[1] = A[1] + B[1];...; C[n] = A[n] + B[n]; são todas feitas no mesmo instante
+ (mesmo 
+\emph on
+clock
+\emph default
+).
+ Alguns compiladores já permitem otimizações que viabilizam o uso deste
+ tipo de processamento, notadamente nas bibliotecas padrões.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+interface do usuário: [ ] kernel numérico [ ] linha de comando [ ] modo
+ texto [X] híbrida (texto e saídas gráficas) [ ] modo gráfico (ex: Qt) [
+ ] navegador
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Recursos de C++:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[X] C++ básico (FCC): variáveis padrões da linguagem, estruturas de controle
+ e repetição, estruturas de dados, struct, classes(objetos, atributos, métodos),
+ funções; entrada e saída de dados (
+\emph on
+streams
+\emph default
+), funções de cmath
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[X] C++ intermediário: funções lambda.
+ Ponteiros, referências, herança, herança múltipla, polimorfismo, sobrecarga
+ de funções e de operadores, tipos genéricos (templates), 
+\emph on
+smarth pointers
+\emph default
+.
+ Diretrizes de pré-processador, classes de armazenamento e modificadores
+ de acesso.
+ Estruturas de dados: enum, uniões.
+ Bibliotecas: entrada e saída acesso com arquivos de disco, redirecionamento.
+ Bibliotecas: 
+\emph on
+filesystem
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[X] C++ intermediário 2: A biblioteca de gabaritos de C++ (a STL), containers,
+ iteradores, objetos funções e funções genéricas.
+ Noções de processamento paralelo (múltiplas threads, uso de 
+\emph on
+thread, join 
+\emph default
+e 
+\emph on
+mutex
+\emph default
+).
+ Bibliotecas: 
+\emph on
+random, threads
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[ ] C++ avançado: Conversão de tipos do usuário, especializações de templates,
+ excessões.
+ Cluster de computadores, processamento paralelo e concorrente, múltiplos
+ processos (pipes, memória compartilhada, sinais).
+ Bibliotecas: 
+\emph on
+expressões regulares, múltiplos processos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Bibliotecas de C++:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[X] Entrada e saída de dados (
+\emph on
+streams
+\emph default
+) [X] cmath [X] 
+\emph on
+filesystem 
+\emph default
+[ ] 
+\emph on
+random 
+\emph default
+[X] 
+\emph on
+threads 
+\emph default
+[ ] 
+\emph on
+expressões regulares 
+\emph default
+[ ] 
+\emph on
+múltiplos processos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Bibliotecas externas:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[X] 
+\family typewriter
+CGnuplot 
+\family default
+[X] 
+\family typewriter
+QCustomPlot 
+\family default
+[ ] 
+\family typewriter
+Qt diálogos
+\family default
+ [ ] QT Janelas/menus/BT______
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Ferramentas auxiliares:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Montador:
+\family typewriter
+ 
+\family default
+[X] make
+\family typewriter
+ 
+\family default
+[] cmake
+\family typewriter
+ 
+\family default
+[X] qmake
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+IDE:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[X] Editor simples: kate/gedit/emacs
+\family typewriter
+ 
+\family default
+[ ] kdevelop
+\family typewriter
+ 
+\family default
+[ ] QT-Creator
+\family typewriter
+ 
+\family default
+[ ] ____________
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+SCV:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[ ] cvs
+\family typewriter
+ 
+\family default
+[ ] svn
+\family typewriter
+ 
+\family default
+[X] git
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+Disciplinas correlacionadas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[ ] estatística
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Itemize
+[ ] Básica: média, desvio padrão, histogramas, números pseudo randômicos.
+ Estatística descritiva.
+ Probabilidades.
+ Variáveis aleatórias Unidimensionais.
+ Função de variáveis aleatórias.
+ Variáveis aleatórias de duas ou mais dimensões.
+ Caracterização de variáveis aleatórias.
+ Variáveis aleatórias discretas e contínuas.
+ Teorema central do limite.
+ Amostragem
+\end_layout
+
+\begin_layout Itemize
+[ ] Intermediária: Estimação.
+ Teste de hipótese.
+ Correlação e regressão.
+ Distribuições (normal.
+ T-Student, X-quadrado)
+\end_layout
+
+\end_inset
+
+ [ ] cálculo numérico 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Itemize
+[ ] Básico: erros, solver de função (iteração de ponto fixo, método das
+ cordas, Newton-Raphson), integral numérica(trapésio, Simpson, Gauss), interpola
+ção(interpolação polinomial, Lagrange, Newton, funções 
+\emph on
+spline
+\emph default
+), ajuste de curvas(ajuste por polinômios, mínimos quadrados) .
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+[ ] Intermediário: matrizes e sistemas de equações lineares(solver de sistema
+ de equações - TDMA, eliminação gauss, fatoração LU), solução numérica de
+ equações diferenciais(método de Euler, método de Taylor e Runge-Kutta)
+\end_layout
+
+\end_deeper
+\end_inset
+
+ [ ]
+\family typewriter
+ 
+\family default
+modelamento numérico 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+[ ] Volume de controle (equações de balanço).
+ [ ] Diferenças finitas.
+ [ ] Elementos finitos
+\end_layout
+
+\end_inset
+
+ [X] análise e processamento de imagens
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \end_body
