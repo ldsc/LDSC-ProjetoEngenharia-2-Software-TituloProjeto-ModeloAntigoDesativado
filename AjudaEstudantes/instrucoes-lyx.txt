@@ -28,6 +28,28 @@ Usando o editor profissional LyX/TeX/LaTeX
     Dica abntex:
     =============
     Se após a instalação do LyX o abntex não funcionar tente instalar o pacote abntex-lyx-0.8-2.noarch.
+    Se o projeto usa abntex você tem de instalar o abntex.
+
+    Comandos:
+    # instala o abntex2
+    dnf install texlive-abntex2
+    # informações sobre o pacote
+    rpm -qi texlive-abntex2
+    # lista de arquivos do pacote
+    rpm -ql texlive-abntex2
+
+    Exemplo, o Comando rpm -ql texlive-abntex2 me mostra os arquivos instaldos.
+/usr/share/licenses/texlive-abntex2
+/usr/share/licenses/texlive-abntex2/lppl1.3.txt
+/usr/share/texlive/texmf-dist/bibtex/bib/abntex2
+/usr/share/texlive/texmf-dist/bibtex/bib/abntex2/abntex2-options.bib
+/usr/share/texlive/texmf-dist/bibtex/bst/abntex2
+/usr/share/texlive/texmf-dist/bibtex/bst/abntex2/abntex2-alf.bst
+/usr/share/texlive/texmf-dist/bibtex/bst/abntex2/abntex2-num.bst
+/usr/share/texlive/texmf-dist/tex/latex/abntex2
+/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2.cls
+/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2abrev.sty
+/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2cite.sty
 
     Dica usuário GNU/Linux
     =======================
