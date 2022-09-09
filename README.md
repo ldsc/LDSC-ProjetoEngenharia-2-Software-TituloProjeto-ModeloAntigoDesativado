@@ -68,3 +68,15 @@ https://github.com/
 https://git-school.github.io/visualizing-git/#free
 https://learngitbranching.js.org/?locale=pt_BR
 Ensinam você a usar os comandos básicos do git e mostram o que esta acontecendo.
+
+Etapa 6)
+Depois que estiver tudo funcionando atualize este arquivo, apagando estas instruções e colocando informações específicas do projeto;
+Lembrando que sempre adicione informações sobre:
+- UENF
+- CCT
+- LENEP
+- Disciplina
+- Professor
+- Ano/semestre
+- Nome membros da equipe
+isto facilita achar informações sobre o projeto.
