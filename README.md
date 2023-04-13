@@ -1,11 +1,11 @@
 # Etapas para criar seu projeto de engenharia
 
-Um SCV - Sistema de Controle de Versões permite gerenciar versões de arquivos. 
-Ele permite gerenciar projetos desenvolvidos individualmente ou em equipe.
+Um SCV - Sistema de Controle de Versões, permite gerenciar projetos desenvolvidos individualmente ou em equipe.
+A base de funcionamento do SCV é a gestão das versões dos arquivos de forma profissional, isto é, com controle e documentação.
 
-O SCV mais utilizado hoje em dia é gerenciado pelo programa git e, normalmente, pelo servidor GitHub.
+O SCV mais utilizado hoje em dia é gerenciado pelo programa git e, normalmente, armazenado no servidor GitHub.
 
-- Para usar o programa git precisamos instalar o git (Etapa 1) e ler um tutorial básico sobre seu uso.
+- Para usar o SCV git precisamos: Instalar o git (Etapa 1a) e ler um tutorial básico sobre seu uso (Etapa 1b).
 - Para poder usar o servidor Github, teremos de criar uma conta neste site/servidor (Etapa 2).
 - Passe os dados para o Prof. Bueno para que ele crie um repositório para o projeto (Etapa 3).
 - Na (Etapa 4), iremos criar uma cópia local do projeto (uma cópia na sua máquina).
