@@ -291,7 +291,7 @@ LatexCommand lstlistoflistings
 \begin_layout Standard
 \align block
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align block
@@ -315,6 +315,30 @@ Adicione um resumo/abstract se for seu TCC
 
 \begin_layout Standard
 \align block
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+NOTA IMPORTANTE:
+\end_layout
+
+\begin_layout Plain Layout
+No caso do trabalho ser feito por equipe considere que:
+\end_layout
+
+\begin_layout Plain Layout
+- A equipe deve ter até 2 alunos, 3 alunos apenas em casos excepcionais.
+\end_layout
+
+\begin_layout Plain Layout
+- Cada aluno deverá ser responsável pelo desenvolvimento de pelo menos 5
+ classes; sendo que na defesa oral deverá informar quais as 5 classes que
+ desenvolveu;
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset include
 LatexCommand include
 filename "Cap0-Introducao-Escopo-Objetivos-Metodologia.lyx"

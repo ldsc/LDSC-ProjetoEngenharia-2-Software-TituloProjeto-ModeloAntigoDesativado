@@ -2,6 +2,8 @@ Como esta organizado o diretório?
 =================================
 O diretório do modelo padrão tem os sequintes subdiretórios:
 
+AjudaEstudantes
+    Contém arquivos txt com instruções e informações básicas.
 doc
     Diretório com cópia dos manuais:
     - ManualDoUsuario.pdf
@@ -13,7 +15,7 @@ doc
     
 doc/ManualDoDesenvolvedor:
     Diretório onde ficarão os arquivos do lyx usados para gerar o ManualDoDesenvolvedor.
-    A ideia é que estes arquivos do lyx contenham todas as informações e instruções de como o software foi desenvolvido, permitindo aos interessados modificar/melhorar o software desenvolvido.
+    A ideia é que estes arquivos do lyx contenham todas as informações e instruções de como o software foi desenvolvido, permitindo aos interessados modificar/melhorar o software.
 
 doc/ManualDoDesenvolvedor/imagens:
 	Neste diretório você deve colocar todas as imagens a serem utilizadas e referenciadas no manual do desenvolvedor.
@@ -31,3 +33,9 @@ src:
 
 test:
     Neste diretório estão programas e arquivos usados para testar o software desenvolvido.
+
+MaterialExerno:
+    Diretório com material de terceiros.
+MaterialAuxiliar:
+    Diretório com material seu ou de colegas do grupo utilizados de forma acessória.
+.git:

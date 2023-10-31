@@ -10,14 +10,14 @@ Como usar javadoc/doxygen?
     Você irá usar o programa doxygen para gerar automaticamente a documentação do código. 
     
     Comandos do doxygen:
-    	- Abra um terminal e vá para o diretório com o programa a ser documentado usando o comando cd (ex:  cd caminho).
-	- Execute o comando (doxygen -y) para gerar o arquivo de configuração do doxygen.
+   	- Abra um terminal e vá para o diretório com o programa a ser documentado usando o comando cd (ex: cd caminho).
+	- Execute o comando (doxygen -g) para gerar o arquivo de configuração do doxygen (Doxyfile).
 	- Modifique o arquivo Doxyfile, informe que a documentação deve ser armazenada 
 	no diretório ../doc/manualDesenvolvedor-doxygen/html
 	- Execute o comando (doxygen) para gerar a documentação  do código.
 	O doxygen irá criar um subdiretório chamado html, nele você encontrará um arquivo index.html 
 	que deve ser aberto usando um navegador (como o Chrome ou Firefox).
-	- Abra o arquivo listagens/html/index.html e  veja como ficou a documentação, navegue pelos arquivos.
+	- Abra o arquivo listagens/html/index.html e veja como ficou a documentação, navegue pelos arquivos.
 	- Note que você pode mudar os parâmetros do arquivo DOXYFILE. Usando um editor de texto como o kate abra o arquivo 
 	DOXYFILE; leia cada parágrafo e a seguir ative/desative determinada opção; a seguir rode novamente o doxygen, 
 	e verifique como ficou a documentação (é bem simples). 
