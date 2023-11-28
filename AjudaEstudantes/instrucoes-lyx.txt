@@ -116,3 +116,152 @@ Usando o editor profissional LyX/TeX/LaTeX
 	libbz2.so.1 => /lib64/libbz2.so.1 (0x00007fddd0270000)
 	libbrotlidec.so.1 => /lib64/libbrotlidec.so.1 (0x00007fddd0263000)
 	libbrotlicommon.so.1 => /lib64/libbrotlicommon.so.1 (0x00007fddcfb8e000)
+
+###########################################################################
+#
+#       INSTRUÇÕES CONFIGURACAO ATALHOS LYX
+#
+#
+###########################################################################
+# André Duarte Bueno - bueno@lenep.uenf.br
+###########################################################################
+# Coloque aqui seu conjunto de teclas de atalho.
+# Para funcionar devem ser carregadas pelo LyX.
+# Duas opções de carregamento:
+# - O arquivo cua.bind carrega este arquivo no final -> Não é a ideal!
+# - Este arquivo carrega logo no início o arquivo padrão "cua.bind".
+# A seguir abra o lyx e vá em
+# Lyx->Ferramentas->Preferencias->Edição->Atalhos-> Arquivo de combinação de teclas
+# e selecione este arquivo: ex: lyx-andrebueno.bind
+# Desta forma informamos o lyx que temos um novo arquivo com as configurações de
+# atalho de teclado.
+
+###########################################################################
+# Teclas que podem ser usadas para atalhos
+###########################################################################
+# Teclas que podem ser usadas para atalhos
+# Modifier Meaning
+# C	 Control
+# M	 Meta, i.e. typically Alt on PC-keyboards
+# S	 Shift
+# ~S	"the state of the shift key is not relevant"
+# (this is useful because "2", for example, will need shift on a french keyboard, but not on an US one).
+# Equivalent keys
+# Testing revealed that the keys <a> and <A> are equivalent in some combinations, i.e.:
+# "C-a" is equivalent to "C-A"
+# "C-S-a" is equivalent to "C-S-A"
+
+###########################################################################
+# Exemplos:
+###########################################################################
+# Duas teclas (bind -> vincular)
+#\bind "C-n"			"buffer-new"
+# Três teclas
+#\bind "M-s t"			"font-size tiny"
+# Quatro teclas
+#\bind "M-s S-S"		"font-size footnotesize"
+
+###########################################################################
+# Como saber quais os comandos?
+###########################################################################
+# Note que além da combinação de teclas precisamos saber o nome da função a ser executada.
+# Para isso precisamos ver alguns exemplos. Abra os arquivos:
+# /usr/share/lyx/bind/cua.bind      -> padrão do lyx
+# /usr/share/lyx/bind/menus.bind    -> atalhos de menu.
+# /usr/share/lyx/ui/stdtoolbars.inc -> comandos da barra de tarefas.
+# /usr/share/lyx/ui/stdmenus.inc    -> comandos de menus.
+# /usr/share/lyx/ui/stdcontext.inc  -> comandos de menus contextuais.
+
+# Identifique o nome do comando e copie o mesmo para o clipboard
+# Cole aqui e associe a uma sequência de teclas.
+# Antes de salvar, abra o lyx e verifique se esta sequência de teclas já não tem alguma funcionalidade.
+# Caso não tenho só salvar e usar.
+# Caso tenha mude o atalho.
+
+# Dica: Alguns atalhos podem não funcionar; isto ocorre por exemplo se o atalho estiver sendo usado pelo menu.
+# Por exemplo, não podemos usar o atalho Alt+E pois esta associado ao menu edit:
+# Dentro do arquivo ~/.lyx/ui/default.ui'' vai encontrar:
+# Submenu "Edit|E" "edit" to just
+# Neste caso precisamos modificar o arquivo, veja como fazer:
+# cp /usr/share/lyx/ui/default.ui' ~/.lyx/ui/default.ui''
+# Submenu "Edit" "edit" .
+
+
+# Nota importante:
+# no arquivo cua.bind tem a informação de que temos duas teclas livres:
+#\bind "C-h"
+#\bind "C-j"
+# Então, vamos usar estas!
+
+
+###########################################################################
+# 1) Carregando o arquivo padrão
+###########################################################################
+# include one of the basic flavours (cua or emacs)
+\bind_file	"cua"
+#\bind_file	"emacs" se quiser usar o padrão do emacs
+
+# Repetir aplicação da última formação Alt+r
+#stdtoolbars.inc -> Item "Apply last" "textstyle-apply"
+\bind "M-r" "textstyle-apply"
+
+# Inserir figura float
+#stdtoolbars.inc -> Item "Insert figure float" "float-insert figure"
+\bind "C-j f" "float-insert figure"
+
+#stdtoolbars.inc -> Item "Insert table float" "float-insert table"
+\bind "C-j t"  "float-insert table"
+
+#stdtoolbars.inc -> Item "Insert label" "label-insert"
+\bind "C-j l"  "label-insert"
+
+#stdtoolbars.inc -> Item "Insert cross-reference" "dialog-show-new-inset ref"
+\bind "C-j r"  "dialog-show-new-inset ref"
+
+#stdtoolbars.inc -> Item "Insert citation" "dialog-show-new-inset citation"
+\bind "C-j c" "dialog-show-new-inset citation"
+
+#stdtoolbars.inc -> Item "Insert index entry" "index-insert"
+\bind "C-j i"  "index-insert"
+
+#stdtoolbars.inc -> Item "Insert nomenclature entry" "nomencl-insert"
+\bind "C-h n"  "nomencl-insert"
+
+#stdtoolbars.inc -> Item "Insert footnote" "footnote-insert"
+\bind "C-h f" "footnote-insert"
+
+#stdtoolbars.inc -> Item "Insert margin note" "marginalnote-insert"
+\bind "C-j m"  "marginalnote-insert"
+
+#stdtoolbars.inc -> Item "Insert LyX note" "note-insert"
+\bind "C-j n"  "note-insert"
+
+#stdtoolbars.inc -> Item "Insert box" "box-insert Frameless"
+\bind "C-j b"  "box-insert Frameless"
+
+#stdtoolbars.inc -> Item "Insert hyperlink" "href-insert"
+\bind "C-j h" "href-insert"
+
+#stdtoolbars.inc -> Item "Insert TeX code" "ert-insert"
+# \bind "C-l" Já existe!
+
+#stdtoolbars.inc -> Item "Insert math macro" "math-macro newmacroname newcommand"
+#\bind "C-j X"  "math-macro newmacroname newcommand"
+
+#stdtoolbars.inc -> Item "Include file" "dialog-show-new-inset include"
+#\bind "C-j Y"  "dialog-show-new-inset include"
+
+#stdtoolbars.inc -> Item "Text style" "dialog-show character"
+\bind "C-j d"  "dialog-show character"
+
+#stdtoolbars.inc -> Item "Paragraph settings" "layout-paragraph"
+\bind "C-j p"  "layout-paragraph"
+
+#stdtoolbars.inc -> Item "Thesaurus" "thesaurus-entry"
+\bind "C-h t" "thesaurus-entry"
+
+## Lista de atalhos definidos abaixo:
+#C-bcdfhilmnrt
+#H-bfnt
+#Dica: para ir e vir use o bookmark do lyx; Shift-f1 cria bookmark 1 e Ctrl-1 vai para o local.
+
