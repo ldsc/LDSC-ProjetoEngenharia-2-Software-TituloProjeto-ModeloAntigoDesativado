@@ -310,7 +310,7 @@ status open
 
 
 \backslash
-ref{CAplicacao-h}
+ref{CSimulador-nome.h}
 \end_layout
 
 \end_inset
@@ -323,14 +323,14 @@ status open
 note que dentro de 
 \backslash
 ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
- abaixo label={CAplicacao-h}
+ abaixo label={CSimulador-nome}
 \end_layout
 
 \end_inset
 
  o arquivo com código da classe 
 \family typewriter
-CAplicacao
+CSimulador-nome
 \family default
 .
 \end_layout
@@ -345,8 +345,8 @@ status open
 \backslash
 lstset{style=C++} 
 \backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CAplicacao}, label={CAp
-licacao-h}] {../../src/CAplicacao.h}
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CSimulador-nome},
+ label={CSimulador-nome.h}] {../../src/CSimulador-nome.h}
 \end_layout
 
 \end_inset
@@ -363,7 +363,7 @@ status open
 
 
 \backslash
-ref{CAplicacao-cpp}
+ref{CSimulador-nome.cpp}
 \end_layout
 
 \end_inset
@@ -386,8 +386,8 @@ status open
 \backslash
 lstset{style=C++} 
 \backslash
-lstinputlisting[ caption={Arquivo de implementação da classe CAplicacao},
- label={CAplicacao-cpp}] {../../src/CAplicacao.cpp}
+lstinputlisting[ caption={Arquivo de implementação da classe CSimulador-nome},
+ label={CSimulador-nome.cpp}] {../../src/CSimulador-nome.cpp}
 \end_layout
 
 \end_inset
@@ -400,14 +400,14 @@ status open
 
 
 \backslash
-ref{programa-cpp}
+ref{Simulador-nome.cpp}
 \end_layout
 
 \end_inset
 
  o programa que usa a classe 
 \family typewriter
-CAplicacao
+CSimulador-nome
 \family default
 .
  
@@ -430,7 +430,7 @@ lstinputlisting[ caption={
 
 Arquivo de implementação da função 
 \backslash
-texttt{main()}}, label={programa-cpp}] {../../src/Programa.cpp}
+texttt{main()}}, label={Simulador-nome.cpp}] {../../src/Simulador-nome.cpp}
 \end_layout
 
 \end_inset
@@ -462,7 +462,7 @@ status open
 \backslash
 lstset{style=out}   
 \backslash
-lstinputlisting[caption=] {../../src/Programa.out}
+lstinputlisting[caption=] {../../src/Simulador-nome.out}
 \end_layout
 
 \end_inset
