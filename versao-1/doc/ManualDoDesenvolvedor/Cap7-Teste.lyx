@@ -172,13 +172,65 @@ Como o programa será validado?
 Resultados e análises
 \end_layout
 
-\begin_layout Standard
-A seguir apresente texto explicando a sequência do teste e imagens do programa
- (captura de tela).
+\begin_layout Subsection
+Arquivo de entrada de dados 
 \end_layout
 
 \begin_layout Standard
-coloque aqui texto falando do diagrama de pacotes, referencie a figura.
+A seguir apresente texto explicando a sequência do teste.
+ Fale dos dados de entrada e mostre o arquivo usado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=bash}   
+\backslash
+lstinputlisting[caption=] {../../test/Teste-01.in}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Arquivo de saída de dados (resultados da tela)
+\end_layout
+
+\begin_layout Standard
+A seguir o arquivo com a saída de dados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=out}   
+\backslash
+lstinputlisting[caption=] {../../test/Teste-01.out}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Figuras
+\end_layout
+
+\begin_layout Standard
+Coloque aqui figura mostrando resultados.
  Veja Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -187,6 +239,7 @@ reference "fig:Teste-TelaPrograma-Captura1"
 \end_inset
 
 .
+ Comente a Figura.
 \end_layout
 
 \begin_layout Standard
@@ -262,13 +315,65 @@ Como o programa será validado?
 Resultados e análises
 \end_layout
 
-\begin_layout Standard
-A seguir apresente texto explicando a sequência do teste e imagens do programa
- (captura de tela).
+\begin_layout Subsection
+Arquivo de entrada de dados 
 \end_layout
 
 \begin_layout Standard
-Coloque aqui texto falando do diagrama de pacotes, referencie a figura.
+A seguir apresente texto explicando a sequência do teste.
+ Fale dos dados de entrada e mostre o arquivo usado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=bash}   
+\backslash
+lstinputlisting[caption=] {../../test/Teste-02.in}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Arquivo de saída de dados (resultados da tela)
+\end_layout
+
+\begin_layout Standard
+A seguir o arquivo com a saída de dados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=out}   
+\backslash
+lstinputlisting[caption=] {../../test/Teste-02.out}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Figuras
+\end_layout
+
+\begin_layout Standard
+Coloque aqui figura mostrando resultados.
  Veja Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -277,6 +382,8 @@ reference "fig:Teste-TelaPrograma-1"
 \end_inset
 
 .
+ Comente a Figura.
+ 
 \begin_inset Note Note
 status open
 
@@ -362,13 +469,65 @@ Como o programa será validado?
 Resultados e análises
 \end_layout
 
-\begin_layout Standard
-A seguir apresente texto explicando a sequência do teste e imagens do programa
- (captura de tela).
+\begin_layout Subsection
+Arquivo de entrada de dados 
 \end_layout
 
 \begin_layout Standard
-coloque aqui texto falando do diagrama de pacotes, referencie a figura.
+A seguir apresente texto explicando a sequência do teste.
+ Fale dos dados de entrada e mostre o arquivo usado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=bash}   
+\backslash
+lstinputlisting[caption=] {../../test/Teste-03.in}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Arquivo de saída de dados (resultados da tela)
+\end_layout
+
+\begin_layout Standard
+A seguir o arquivo com a saída de dados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=out}   
+\backslash
+lstinputlisting[caption=] {../../test/Teste-03.out}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Figuras
+\end_layout
+
+\begin_layout Standard
+Coloque aqui figura mostrando resultados.
  Veja Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -377,6 +536,8 @@ reference "fig:Teste-TelaPrograma-Captura1-1"
 \end_inset
 
 .
+ Comente a Figura.
+ 
 \end_layout
 
 \begin_layout Standard
