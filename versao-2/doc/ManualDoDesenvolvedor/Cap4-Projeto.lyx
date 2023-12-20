@@ -1578,7 +1578,7 @@ A tabela esta preenchida com dados de um dos exemplos de projeto; você deve
 \begin_inset Tabular
 <lyxtabular version="3" rows="22" columns="2">
 <features islongtable="true" longtabularalignment="center">
-<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="3cm">
 <column alignment="center" valignment="top" width="12cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">

@@ -172,10 +172,10 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/andreduartebueno/workdir/Projeto-TCC-SimuladorDifusaoTermica-Nicholas-Bueno-Guilherme/imagens/Interface-vFinal.png
+	filename imagens/Interface-SimuladorTranscal-Nicholas.png
 	lyxscale 30
 	width 100text%
-	height 85in
+	height 85theight%
 	keepAspectRatio
 
 \end_inset
