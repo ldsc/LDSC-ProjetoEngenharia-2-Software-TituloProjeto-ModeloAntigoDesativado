@@ -31,6 +31,7 @@ Note que para poder usar o servidor Github vocês terão de criar uma conta nest
 
 Depois de criado o repositório e adicionados os membros da equipe os mesmos poderão fazer o download dos arquivos para suas máquinas locais.
 Depois de baixar o projeto poderão alterar os arquivos existentes ou adicionar novos arquivos de acordo com as necessidades do projeto específico.
+
 Entre os arquivos a serem modificados estão:
 - Arquivos do git (git).
 - Arquivos de modelagem(umbrello).
@@ -152,6 +153,9 @@ Alguns sites como:
     https://learngitbranching.js.org/?locale=pt_BR
 Ensinam você a usar os comandos básicos do git e mostram o que esta acontecendo.
 
+Nota: Note que o modelo já tem os diretórios e arquivos necessários.
+Isto significa que você não deve criar novos diretórios (somente em casos muito especiais).
+
 Etapa 6)
 ========
 Depois que estiver tudo funcionando atualize o arquivo, README.MD colocando informações específicas do projeto;
@@ -166,6 +170,8 @@ Lembrando que sempre adicione informações sobre:
 isto facilita achar informações sobre o projeto.
 
 O arquivo README.MD pode ser editado no site do github (inclui opções de formatação) ou usando um editor de texto que saiba manipular este formato de arquivo.
+
+
 
 Nota: eu uso o editor de texto emacs, trabalho com arquivos no formato README.org e depois converto para o formato README.md.
 Trabalhe com o editor de sua preferência. Para quem usa windows uma boa opção é o editor vscode.

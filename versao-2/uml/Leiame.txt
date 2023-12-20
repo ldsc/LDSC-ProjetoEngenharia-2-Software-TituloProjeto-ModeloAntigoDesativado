@@ -1,0 +1,4 @@
+Coloque aqui os arquivos do modelador umbrello.
+Coloque aqui as imagens uml dos diagramas.
+O nome dos arquivos não deve ter espaços e nem acentos.
+Os arquivos no formato de imagens png, jpg, devem ter boa resolução.
