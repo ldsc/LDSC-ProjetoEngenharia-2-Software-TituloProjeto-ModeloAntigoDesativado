@@ -166,20 +166,24 @@ De forma mais detalhada apresenta-se a seguir um conjunto de pacotes a serem
 
 \begin_deeper
 \begin_layout LyX-Code
+# Pacotes LyX/Tex/Latex
+\end_layout
+
+\begin_layout LyX-Code
 dnf install lyx 'tex(esint10.pfb)'  'tex(lgrcmr.fd)' 'tex(subscript.sty)' 'tex(lgre
 nc.def)'
 \end_layout
 
 \begin_layout LyX-Code
-dnf install texlive-prettyref 
+dnf install texlive-prettyref
 \end_layout
 
 \begin_layout LyX-Code
-dnf install texlive-textgreek  
+dnf install texlive-textgreek
 \end_layout
 
 \begin_layout LyX-Code
-dnf install texlive-accents 
+dnf install texlive-accents texlive-lastpage
 \end_layout
 
 \begin_layout LyX-Code
@@ -199,10 +203,6 @@ dnf install texlive-sectsty
 \end_layout
 
 \begin_layout LyX-Code
-dnf install texlive-prettyref
-\end_layout
-
-\begin_layout LyX-Code
 dnf install texlive-greek-fontenc texlive-cbfonts
 \end_layout
 
@@ -211,11 +211,29 @@ dnf install texlive-luainputenc
 \end_layout
 
 \begin_layout LyX-Code
-dnf install
-\series bold
- 
-\series default
-texlive-listings
+dnf install texlive-mhchem texlive-chemgreek
+\end_layout
+
+\begin_layout LyX-Code
+#texconfig
+\end_layout
+
+\begin_layout LyX-Code
+dnf install texlive-texlive-scripts-extra
+\end_layout
+
+\begin_layout LyX-Code
+#abntex
+\end_layout
+
+\begin_layout LyX-Code
+dnf install  texlive-abnt.noarch texlive-abntex2.noarch texlive-abntex2-doc.noarch
+  texlive-abntexto.noarch texlive-biblatex-abnt.noarch texlive-biblatex-abnt-doc.no
+arch
+\end_layout
+
+\begin_layout LyX-Code
+
 \end_layout
 
 \begin_layout LyX-Code
@@ -273,7 +291,7 @@ no arquivo master selecionar como classe de documento a opção ABNT.
 \begin_layout Standard
 \begin_inset Graphics
 	filename imagens/ApendiceB/ABNT-DefinindoClasseDoDocumentoNoLaTeX-LyX.png
-	width 100text%
+	width 70text%
 	height 80theight%
 	keepAspectRatio
 
@@ -297,7 +315,7 @@ abntex-alf
 \begin_layout Standard
 \begin_inset Graphics
 	filename imagens/ApendiceB/ABNT-DefinindoEstiloCitacoes.png
-	width 100text%
+	width 70text%
 	height 80theight%
 	keepAspectRatio
 

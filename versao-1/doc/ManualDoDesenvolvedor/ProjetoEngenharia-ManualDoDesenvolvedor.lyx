@@ -27,9 +27,14 @@
 \definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
 % Informa que vai usar o pacote listings, 
 % disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
-\usepackage{listings}
 
-\renewcommand{\lstlistingname}{Listagem}
+%Fonte: https://github.com/abntex/abntex2/wiki/HowToFormatarCodigoFonte
+\usepackage{listings}
+%\renewcommand{\lstlistingname}{Listagem}
+% Altera o nome padrão do rótulo usado no comando \autoref{}
+\renewcommand{\lstlistingname}{Código}
+% Altera o rótulo a ser usando no elemento pré-textual "Lista de código"
+%\renewcommand{\lstlistlistingname}{Lista de códigos}
 \end_preamble
 \options normaltoc, sumarioincompleto
 \use_default_options false
@@ -55,6 +60,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize 12
 \spacing onehalf
 \use_hyperref true
@@ -85,7 +91,7 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
-\biblio_style plain
+\biblio_style abntex2-alf
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
